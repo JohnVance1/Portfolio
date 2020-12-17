@@ -1,0 +1,71 @@
+{
+    "recipes": [
+        {
+            "name":"Over-Medium Fried Egg",
+            "ingredients": [
+                "1 Tbsp. Butter", 
+                "1 Large Egg", 
+                "Salt", 
+                "Pepper"
+            ], 
+            "instructions": [
+                "In a small nonstick pan over medium heat, melt butter.",
+                "Crack the egg into the pan.", 
+                "Cook 3 minutes, or until white is set.",
+                "Flip and cook 2 to 3 minutes more, until yolk is slightly set.", 
+                "Remove from pan and season with salt and pepper."
+            ], 
+            "sources": [
+                "https://www.delish.com/cooking/recipe-ideas/a23499380/how-to-fry-an-egg/"
+            ], 
+            "unlocked": true
+        }, 
+        {
+            "name":"Long Grain White Rice", 
+            "ingredients": [
+                "1 Cup Long Grain White Rice", 
+                "2 Cups Water", 
+                "(Optionally) 1 Pinch of Salt"
+            ], 
+            "instructions": [
+                "Add 2 cups of water to a small saucepan with a tight-fitting lid. If desired, add a pinch of salt.", 
+                "Add 1 cup of rice, stirring briefly to break up clumps of rice.", 
+                "Bring to a boil.", 
+                "Cover the pot with the lid.", 
+                "Reduce heat and simmer for 20 minutes.", 
+                "At the end of 20 minutes, turn off the burner and remove from heat.",
+                "Let the rice sit, covered, for an additional 5 minutes.", 
+                "After 5 minutes, remove the lid and fluff the rice with a fork to separate the grains."
+            ], 
+            "sources": [
+                "https://www.allrecipes.com/article/how-to-cook-rice/"
+            ], 
+            "unlocked": true
+        }, 
+        {
+            "name":"Spaghetti & Meatballs", 
+            "ingredients": [
+                "1 lb Uncooked Spaghetti Noodles", 
+                "1 Jar Marinara Sauce",
+                "16 oz frozen fully-cooked meatballs (32 meatballs, 1/2 oz each)", 
+                "(Optionally) 1/4 Cup Grated Parmesan Cheese"
+            ], 
+            "instructions": [
+                "Bring to boil a large pot about 2/3 full of water.", 
+                "Once boiling, add spaghetti noodles and cook for for around 10 minutes, checking every minute after 8.",
+                "Check the pasta by biting into a strand. It is done when it is cooked through, but still firm. However, it can be cooked for a further 1-2 minutes if softer spaghetti is preferred.",
+                "Drain pasta with a strainer.", 
+                "While the spaghetti is cooking, add sauce and meatballs to a 3-quart saucepan.", 
+                "Heat the sauce and meatballs over medium heat and bring to a boil.", 
+                "Reduce the heat of the sauce and meatballs to low.",
+                "Cover the sauce and cook for another 20 minutes or until the meatballs are heated through, stirring occasionally.",
+                "Serve sauce and meatball mixture over a bed of spaghetti."
+            ], 
+            "sources": [
+                "https://www.campbells.com/kitchen/recipes/quick-spaghetti-meatballs/",
+                "https://www.bbcgoodfood.com/howto/guide/how-cook-spaghetti"
+            ], 
+            "unlocked": true
+        }
+    ]
+}

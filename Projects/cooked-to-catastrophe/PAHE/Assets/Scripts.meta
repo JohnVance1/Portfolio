@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 684b24f9a9fc43149b5b9b96ddacf11c
+=======
+guid: fb884d62443bd49458003c31aa278953
+>>>>>>> 44a37af... Added a script that allowed for the changing of the temperature
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
