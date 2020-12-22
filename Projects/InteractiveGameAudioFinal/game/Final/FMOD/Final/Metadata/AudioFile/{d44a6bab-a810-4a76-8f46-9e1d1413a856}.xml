@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{d44a6bab-a810-4a76-8f46-9e1d1413a856}">
+		<property name="assetPath">
+			<value>Health Low.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.1326303854875284</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f3054960-f869-40da-aa87-7ad19b133dc9}</destination>
+		</relationship>
+	</object>
+</objects>

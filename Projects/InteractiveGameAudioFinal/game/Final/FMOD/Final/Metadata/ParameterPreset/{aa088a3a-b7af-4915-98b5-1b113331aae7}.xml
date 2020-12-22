@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{aa088a3a-b7af-4915-98b5-1b113331aae7}">
+		<property name="name">
+			<value>Prox</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ae053146-2003-4674-a96a-1ea99b50509f}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{fbcb2ebf-a0b2-4160-8c22-85f46e9f749f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{fbcb2ebf-a0b2-4160-8c22-85f46e9f749f}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
