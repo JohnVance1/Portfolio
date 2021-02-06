@@ -497,18 +497,28 @@ footer{
 
 }
 
+.githubDouble{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    border-top: 1px solid #5e009e;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
 a.btn-block{
     padding: 20px;
 
 }
 
-.github:hover{
+.github:hover, .githubDouble:hover{
     background-color: #5e009e;
     transition: 1s;
     
 }
 
-.github:hover a{
+.github:hover a, .githubDouble:hover a{
     text-decoration: none;
     word-wrap: none;
     color: #7ccfff;
@@ -516,7 +526,7 @@ a.btn-block{
 
 }
 
-.github a{
+.github a, .githubDouble a{
     font-size: 1.5rem;
 
 }
