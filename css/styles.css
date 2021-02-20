@@ -30,6 +30,7 @@
         background-color: #dbdbdb;
         /* box-shadow: 20px 20px 5px grey; */
         
+        
     }
     
     .projectBlocksRight{
@@ -49,10 +50,12 @@
         
     }
 
+    
+
 
 
     .aboutBlock{
-        margin: 0px 200px 0px 200px;
+        margin: 0px 200px 85px 200px;
         padding: 20px 0px 0px 0px;
         background-color: #dbdbdb;
         /* box-shadow: 20px 20px 5px grey; */
@@ -205,7 +208,7 @@
     } */
 
     .aboutBlock{
-        margin: 0px 25px 0px 25px;
+        margin: 0px 25px 85px 25px;
         padding: 20px 0px 0px 0px;
         background-color: #dbdbdb;
         /* box-shadow: 20px 20px 5px grey; */
@@ -287,14 +290,14 @@
         padding: 50px 75px 100px 75px;
     } */
     .aboutBlock{
-        margin: 0px 25px 5px 25px;
+        margin: 0px 0px 85px 0px;
         padding: 20px 0px 0px 0px;
         background-color: #dbdbdb;
         /* box-shadow: 20px 20px 5px grey; */
         
     }
     .contact{
-        margin: 125px 25px 125px 25px;
+        /* margin: 125px 25px 125px 25px; */
         text-align: center;
     
     }
@@ -312,6 +315,11 @@
     
     }
 } */
+
+.projectBlocksLeft, .projectBlocksRight, .projectBlocksCenter, .aboutBlock{
+    box-shadow: 5px 5px 5px 0px black;
+
+}
 
 img.col-md-12.icon{
     width: 40%;
@@ -484,6 +492,54 @@ footer{
     /* background-position: 100% 100%; */
 
 } 
+
+.projectsBackground{
+    /* position: absolute; */
+    padding-top: 85px;
+    /* background-image: linear-gradient(90deg, blue, blueviolet, rgb(126, 0, 175), blueviolet, blue); */
+    /* background-size: 400% 400%; */
+    animation: Projects 30s  infinite;
+    /* background-position: 100% 100%; */
+
+} 
+
+.audioBackground{
+    /* position: absolute; */
+    padding-top: 85px;
+    /* background-image: linear-gradient(90deg, blue, blueviolet, rgb(126, 0, 175), blueviolet, blue); */
+    /* background-size: 400% 400%; */
+    animation: Projects 30s infinite;
+    /* background-position: 100% 100%; */
+
+} 
+
+.aboutBackground{
+    /* position: absolute; */
+    padding-top: 85px;
+    /* background-image: linear-gradient(90deg, blue, blueviolet, rgb(126, 0, 175), blueviolet, blue); */
+    /* background-size: 400% 400%; */
+    animation: Projects 30s infinite;
+    /* background-position: 100% 100%; */
+
+} 
+
+@keyframes Projects {
+	0% {
+		background-color: blue;
+	}
+	25% {
+        background-color: blueviolet;
+    }    
+	50% {
+        background-color: rgb(126, 0, 175);
+    }    
+    75% {
+        background-color: blueviolet;
+    }
+    100% {
+        background-color: blue;
+	}
+}
 
 
 
