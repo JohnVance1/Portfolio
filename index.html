@@ -20,16 +20,17 @@
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css"> -->
+  
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
   
   <!-- JavaScript 
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- <script src="javaScript/move.js"></script> -->
-  <!--<script src="javaScript/bootstrap.js"></script>-->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
   
    <!-- FancyBox 
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -45,29 +46,22 @@
 
 </head>
 <header>
-  <div>
-    <div class="header">
+  <div class="header">
                 
-      <h1 class="display-3">John Vance</h1>
-      <!-- <img class="col-md-12 icon" src="images/favicon.png" alt="image"/> -->
-        <!-- <p class="h4">Third year Game Design and Development major -->
-        <!-- at RIT</p></h1> -->
-      
+    <h1 class="display-3">John Vance</h1>
+    <!-- <img class="col-md-12 icon" src="images/favicon.png" alt="image"/> -->
+      <!-- <p class="h4">Third year Game Design and Development major -->
+      <!-- at RIT</p></h1> -->
+    
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 headLinks h3">
+          <a class="btn-block" href="#programming" style="text-decoration: none;">Programming Projects</a>  
+        </div>
+        <div class="col-md-6 headLinks h3">
+          <a class="btn-block" href="#audio" style="text-decoration: none;">Sound Projects</a>           
+        </div>
     </div>
-    <div class="container">
-      <div class="row navBar">
-          <div class="col h3">
-              <div class="headLinks">           
-                <a class="btn-block" href="#gameProject" style="text-decoration: none;">Programming Projects</a>  
-              </div>
-            </div>
-
-          <div class="col h3">
-            <div class="headLinks">
-              <a class="btn-block" href="#audioProject" style="text-decoration: none;">Sound Projects</a>           
-            </div>
-          </div>
-      </div>
     </div>
   </div>
 </header>
@@ -77,95 +71,73 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
   <div class="box">
-    <div class="animate">
-
-      <h3 class="container-fluid">About Me</h3>
-
-        <div class="aboutBackground">
-          <div class="aboutBlock">
-            <div class="">
-              <div class="row">
-                <div class="col images">
-                  <a class="" href="images/profile.jpg" data-fancybox>
-                
+    <div class="animate generalBackground">
+      <div id="break" class="h4" style="margin-top: 0px;">About Me</div>
+      <div id="aboutMe">
+        <div class="shadowSpacing d-flex justify-content-center align-items-center">
+          <div class="tabBackground">
+            <div class="row container-fluid"> 
+              <div class="col-md-6 profilePic">
+                <a class="" href="images/profile.jpg" data-fancybox>
+              
                   <img class="rounded-circle" src="images/profile.jpg" alt="Picture of me"/></img>
-                  </a>
-                </div>
-                <div class="col-md-6 contact">  
-                  <div>
-                    <div class="">
-                      <!-- <h5 style="margin: 0px;">About Me</h5> -->
-                      <p style="margin: 20px 50px;">I recently graduated from Rochester Institute of Technology with a Master of Science degree in Game Design and
-                        Development with a minor in Music and Technology.
-                      </p>
-                      <p style="margin: 20px 50px;">My goal to combine my two passions of coding and composing while also having a well rounded skill set in game design.
-                        I am very passionate about Game Design and I actively seek out new techniques and information I can use when creating games. 
-                      </p>
-                      <p style="margin: 20px 50px;">Throughout my time at RIT I have played in both the concerpt and jazz bands at RIT, participated in
-                        multiple volleyball intermural leauges simultaniously, and I was the President of the RIT Juggling Club for three years.
-                      </p>
-                      <!-- <p style="margin: 20px 50px;">You can find my resume below!</p> -->
-                      
+                </a>
+              </div>
+              <div class="col-md-6">  
+                <div class="aboutMeText">
+                  <div class="bodyText">
+                    <p>I recently graduated from Rochester Institute of Technology with a Master of Science degree in Game Design and
+                      Development with a minor in Music and Technology.
+                    </p>
+                    <p>My goal to combine my two passions of coding and composing while also having a well rounded skill set in game design.
+                      I am very passionate about Game Design and I actively seek out new techniques and information I can use when creating games. 
+                    </p>
+                    <p>Throughout my time at RIT I have played in both the concerpt and jazz bands at RIT, participated in
+                      multiple volleyball intermural leauges simultaniously, and I was the President of the RIT Juggling Club for three years.
+                    </p>
+                    <!-- <p style="margin: 20px 50px;">You can find my resume below!</p> -->
+                    
                   </div>
 
                   <br>
-
-                  <p>Feel free to email the contact below</p>
-                  <p style="border-top: 1px solid #5e009e; padding-top: 16px;">jmv7411@rit.edu<br></p>
-                </div>
-              </div>
-
-              
-              </div>
-              <div class="row">
-                <div class="col-md-6 container-fluid resume">     
-                  <div class="insideResume">   
-                    <a class="btn-block" target="_blank" href="Resume/resume.pdf">My Resume</a>
+                  <div class="bodyText">
+                    <p>Feel free to email the contact below</p>
+                    <p style="border-top: 1px solid #5e009e; padding-top: 16px;">johnmosserv@gmail.com<br></p>
                   </div>
-                    
                 </div>
-                <div class="col-md-6 container-fluid resume">     
-                  <div class="insideResume">   
-                    <a class="btn-block" target="_blank" href="Resume/resume_Audio.pdf">My Audio Resume</a>
-                  </div>
-                    
-                </div>
-                <!-- <div class="col-md-6 container-fluid resume">     
-                  <div class="insideResume">   
-                    <a class="btn-block" target="_blank" href="Resume/resume_Audio.pdf">My Audio Resume</a>
-                  </div>
-                    
-                </div> -->
               </div>
             </div>
-            
+          <div class="gitHubDuo">
+            <a class="btn-block" target="_blank" href="Resume/resume.pdf">My Resume</a>
+            <a class="btn-block" target="_blank" href="Resume/resume_Audio.pdf">My Audio Resume</a>
+
+
           </div>
-
+          
+          
         </div>
-          
-      <h3 class="container-fluid">Programming Projects</h3>
-      <!-- <h3>Projects</h3> -->
+        
+        </div>
+      </div>
       
-      <!-- <h4 class="container-fluid">Personal Projects</h2> -->
-      <div id="gameProject" class="projectsBackground">
+      <!-- <h4 class="">Personal Projects</h2> -->
+      <div id="break" class="h4">Programming Projects</div>
 
-        <!-- First Row -->
-        <div class="row">
-          
-          <!-- Wizard Viking Block -->
-          <div class="col-md-12">
+      <div id="programming" class="">
+          <!-- First Row -->
+          <div class="shadowSpacing d-flex justify-content-center align-items-center">
 
-            <div class="projectBlocksCenter">    
+            <div class="tabBackground">    
               <h5 style="text-decoration: underline;">The Shattering Swords</h5>
-              <p style="text-align: center;">Febuary 2021 - May 2022</p>
+              <p class="dateText" style="text-align: center;">Febuary 2021 - May 2022</p>
               <div class="main">
-                <div class="col-md-12 images">
-                  <a class="pic" href="images/CapstonePic.png" data-fancybox>
-                    <img src="images/CapstonePic.png" alt="image"/></img>
+                <div class="">
+                  <a class="images" href="images/CapstonePic.png" data-fancybox>
+                    <img class="" src="images/CapstonePic.png" alt="image"/></img>
                   </a>               
                 </div>
-                <div class="col-md-12">
-                  <p class="bodyText">The Shattering Swords is a 3rd-person action game centered around a real-time weapon-switching 
+                <div>
+                  <p class="text">The Shattering Swords is a 3rd-person action game centered around a real-time weapon-switching 
                     combat system. Combat is grounded and deliberate, similar to Dark Souls. You wield a magical sword that can change
                     its shape on the fly when exposed to various gemstones. You play as a reluctant hero who takes up the sword to 
                     defend their village from a horde of living gem constructs. You'll slash, roll, and parry your way through combat 
@@ -187,7 +159,7 @@
                                 
                 </div>        
               </div>
-              <p class="gitText">You can download the most recent build off of the Dev Blog below:
+              <p class="bodyText">You can download the most recent build off of the Dev Blog below:
               </p>
 
               <div class="github">
@@ -198,68 +170,66 @@
                   
             </div>
           </div>  
-          <!-- End of TSS block -->
-          
-        </div>
-        <!-- End of First Row -->
+          <!-- End of First Row -->
 
-        <!-- Second Row -->
-        <div class="row">            
+          <!-- Second Row -->
+          <div class="shadowSpacing">            
 
-          <!-- Grave Escape Start -->
-          <div class="col-md-6">
-            <div class="projectBlocksLeft">    
-              <h5 style="text-decoration: underline;">Grave Escape (Wrath of the Boney Boys)</h5>
-              <p style="text-align: center;">October 2019</p>
-              <div class="main">
-                <div class="col-md-12 images">
-                  <a class="pic" href="images/GraveEscape.png" data-fancybox>
-                    <img src="images/GraveEscape.png" alt="image"/></img>
-                  </a>               
+            <!-- Grave Escape Start -->
+            <div class="row ">
+              <div class="col-md-6">
+                <div class="tabBackground">    
+                <h5 style="text-decoration: underline;">Grave Escape (Wrath of the Boney Boys)</h5>
+                <p class="dateText" style="text-align: center;">October 2019</p>
+                <div class="main">
+                  <div class="">
+                    <a class="images" href="images/GraveEscape.png" data-fancybox>
+                      <img src="images/GraveEscape.png" alt="image"/></img>
+                    </a>               
+                  </div>
+                  <div class="">
+                    <p class="text">Grave Escape is a comedy horror game that four classmates and I created over a five week period in one of our academic courses.
+                      The main game mechanics are centered around your character finding and collecting pumpkins while you are being chased by skeletons 
+                      that are ragdolling and chasing after the player. I created the main enemy AI, the level design, and worked on the collectables.
+                    </p>              
+                  </div>            
                 </div>
-                <div class="col-md-12 bodyText">
-                  <p class="bodyText">Grave Escape is a comedy horror game that four classmates and I created over a five week period in one of our academic courses.
-                    The main game mechanics are centered around your character finding and collecting pumpkins while you are being chased by skeletons 
-                    that are ragdolling and chasing after the player. I created the main enemy AI, the level design, and worked on the collectables.
-                  </p>              
-                </div>            
-              </div>
-              <p class="gitText">You can view the code and build on GitHub below 
-              </p>
+                <p class="bodyText">You can view the code and build on GitHub below 
+                </p>
 
-              <div class="github">
-                
-                <a class="btn-block" href="https://github.com/JohnVance1/Portfolio/tree/master/Projects/Grave%20Escape%20(Wrath%20of%20the%20Bony%20Boys)" target="_blank"> Grave Escape </a>
-                
-              </div>
+                <div class="github">
                   
-                
+                  <a class="btn-block" href="https://github.com/JohnVance1/Portfolio/tree/master/Projects/Grave%20Escape%20(Wrath%20of%20the%20Bony%20Boys)" target="_blank"> Grave Escape </a>
+                  
+                </div>
+                    
+                  
+              </div>
             </div>
-          </div>
-          <!-- Grave Escape End -->
+            <!-- Grave Escape End -->
 
-          <!-- Procedural Cave Generator Start -->
-          <div class="col-md-6">
-            <div class="projectBlocksRight">    
+            <!-- Procedural Cave Generator Start -->
+            <div class="col-md-6">
+              <div class="tabBackground">    
               <h5 style="text-decoration: underline;">Procedural Cave Generation</h5>
-              <p style="text-align: center;">November 2021 - Current</p>
+              <p class="dateText" style="text-align: center;">November 2021 - Current</p>
   
               <div class="main">
-                <div class="col-md-12 images">
-                  <a class="pic" href="images/ProcGenPic.PNG" data-fancybox>
+                <div class="">
+                  <a class="images" href="images/ProcGenPic.PNG" data-fancybox>
                     <img src="images/ProcGenPic.PNG" alt="image"/>
                   </a>             
                 </div>
-                <div class="col-md-12 bodyText">
-                  <p>Working on a procedural cave generator using a marching squares algorithm. The current build includes random, perlin, and 
+                <div class="">
+                  <p class="text">Working on a procedural cave generator using a marching squares algorithm. The current build includes random, perlin, and 
                     fractal brownian noise generation methods and a top to bottom A star pathfinding algorithm. Currently in development is 
                     better pathfinding algorithms and an option for 2D platformer style pathfinding as well as item and enemy genereations.
-                 
+                
                   </p>
                                     
                 </div>
               </div>
-              <p class="gitText">You can download the build below 
+              <p class="bodyText">You can download the build below 
               </p>          
   
               <div class="github">
@@ -268,201 +238,165 @@
                 
                 
               </div>
-                 
-            </div>
-          </div>
-          <!--  End -->
-
-
-          
-        </div>
-
-        
-        <div class="row">
-
-          
-
-
-
-        </div>
-
-
-
-      </div>
-      
-      <h3 class="container-fluid">Audio Projects</h3>
-      <div class="row">
-        <div class="col-md-12 container-fluid github">
-        <a class="btn-block" href="https://johnvance.bandcamp.com" target="_blank"> My Bandcamp </a>
-      </div>
-      </div>
-
-      <div id="audioProject" class="audioBackground">
-        <!-- Fourth Row -->
-        <div class="row">
-          <!-- GGJ Practice -->
-          <div class="col-md-6">
-            <div class="projectBlocksLeft">    
-              <h5 style="text-decoration: underline;">Cold Piece</h5>
-              <p style="text-align: center;">January 2021</p>
-
-              <div class="main">
-                <div class="col-md-12 images">
-                  <a class="pic" href="images/ColdPiecePic.png" data-fancybox>
-                    <img src="images/ColdPiecePic.png" alt="image"/>
-                  </a>               
-                </div>
-                <div class="col-md-12">
-                  <p class="bodyText">Created a game prototype on a team of seven individuals from Japan, Southeast Asia, and the US. Developed as practice for the 
-                    Global Game Jam 2021. Produced the main background music as well as the sound effects within the project. 
-
-                  </p>              
-                </div>            
-              </div>
-              <p class="gitText">You can view the code or check out the audio on Youtube below 
-              </p>
-
-              <div class="row">
-                <div class="col-md-6 container-fluid github">
-                
-                  <a class="btn-block" href="https://github.com/JohnVance1/KCG-RIT-SnowGame" target="_blank"> Cold Piece </a>
-                  
-                </div>
-      
-                <div class="col-md-6 container-fluid github">
-                
-                  <a class="btn-block" href="https://youtu.be/1z6Bacy9Of4" target="_blank"> Video </a>
-                  
-                </div>
-
-              <!-- <div class="github">
-                
-                <a class="btn-block" href="https://github.com/JohnVance1/KCG-RIT-SnowGame" target="_blank"> Cold Piece </a>
-                
-              </div> -->
-                
-            </div>
-          </div>
-        </div>
-
-          <!-- IGA Final Block -->
-          <div class="col-md-6">
-            <div class="projectBlocksRight">    
-              <h5 style="text-decoration: underline;">Interactive Game Audio Final Project</h5>
-              <p style="text-align: center;">April - May 2020</p>
-
-              <div class="main">
-                <div class="col-md-12 images">
-                  <a class="pic" href="images/IGAPic.png" data-fancybox>
-                    <img src="images/IGAPic.png" alt="image"/>
-                  </a>             
-                </div>
-                <div class="col-md-12 bodyText">
-                  <p>Created custom audio sound effects and music to an already existing Unity tutorial. 
-                    All audio was mixed and mastered using Reaper and automated within Unity using FMOD. 
-                    Other gameplay functions outside of the given tutorial were also included to provide a more rounded game.                 
-                  </p>
-                  <p>
-                    The Unity Tutroial I used for this project is located here : <a href="https://learn.unity.com/project/2d-roguelike-tutorial" target="_blank"> Unity Tutorial </a>
-                  </p>
-                </div>
-              </div>
-              <p class="gitText">You can view the Build on GitHub below or check out some of the soundtrack on SoundCloud
-              </p>          
-
-              <div class="row">
-                <div class="col-md-6 container-fluid github">
-                
-                  <a class="btn-block" href="https://github.com/JohnVance1/Portfolio/tree/master/Projects/InteractiveGameAudioFinal/game/Final/Build" target="_blank"> IGA Final </a>
-                  
-                </div>
-      
-                <div class="col-md-6 container-fluid github">
-                
-                  <a class="btn-block" href="https://soundcloud.com/explodingcake/sets/iga-final-sound-samples" target="_blank"> SoundCloud </a>
-                  
-                </div>
-              </div>
-
-              <!-- <div class="github">
-                
-                <a class="btn-block" href="https://github.com/JohnVance1/Portfolio/tree/master/Projects/InteractiveGameAudioFinal/game/Final/Build" target="_blank"> IGA Final </a>
-                
-              </div>             -->
-            </div>
-          </div>
-        </div>
-          
-
-        <!-- Fifth Row -->
-        <div class="row">
-          <!-- Automic Launcher Block -->
-          <div class="col-md-6">
-            <div class="projectBlocksLeft">    
-              <h5 style="text-decoration: underline;">Automic Launcher</h5>
-              <p style="text-align: center;">November 2019</p>
-
-              <div class="main">
-                <div class="col-md-12 images">
-                  <a class="pic" href="images/JamForACause.png" data-fancybox>
-                    <img src="images/JamForACause.png" alt="image"/>
-                  </a>               
-                </div>
-                <div class="col-md-12">
-                  <p class="bodyText">I created the main track of the game over the course of a weekend. The game was made during the Jam for a Cause Game Jam
-                    which was held during the weekend of November 15-16, 2019. The game won "Most Accurate to the Theme" of which was Education. I based the 
-                    main track off of the soundtrack of the movie Intersteller as per the team that I was working with.
-
-                  </p>              
-                </div>            
-              </div>
-              <p class="gitText">You can view the game on itch.io below 
-              </p>
-
-              <div class="github">
-                
-                <a class="btn-block" href="https://oneredshoe.itch.io/atomic-launcher" target="_blank"> Automic Launcher </a>
                 
               </div>
-                  
-                
             </div>
-          </div>
 
-          
-        </div>
-
-
-
-
-
-
-          
-
-        </div>
-      
-
-      
-
-      
-    
-    
-        <footer>
-          <div class="container">
-            <div class="twelve columns footer">
-              <p>&copy; John Vance | All Rights Reserved</p>
+            <!--  End -->
             </div>
+
             
           </div>
-  
-        </footer>
-        
+
+          
+          
+
+
       </div>
       
+      
+      <div id="break" class="h4">Audio Projects</div>
 
+      <div id="audio" class="">
+        <!-- <div id="bandCamp">
+          <a  href="https://johnvance.bandcamp.com" target="_blank"> My Bandcamp </a>
+        </div> -->
+          <!-- Fourth Row -->
+          <div class="shadowSpacing d-flex justify-content-center align-items-center">
+            <!-- GGJ Practice -->
+            <div class="tabBackground">
+                <h5 style="text-decoration: underline;">Cold Piece</h5>
+                <p class="dateText" style="text-align: center;">January 2021</p>
+
+                <div class="main">
+                  <div class="">
+                    <a class="images" href="images/ColdPiecePic.png" data-fancybox>
+                      <img src="images/ColdPiecePic.png" alt="image"/>
+                    </a>               
+                  </div>
+                  <div class="">
+                    <p class="text">Created a game prototype on a team of seven individuals from Japan, Southeast Asia, and the US. Developed as practice for the 
+                      Global Game Jam 2021. Produced the main background music as well as the sound effects within the project. 
+
+                    </p>              
+                  </div>            
+                </div>
+                <p class="bodyText">You can view the code or check out the audio on Youtube below 
+                </p>
+
+                <div class="gitHubDuo">
+
+                    <a class="btn-block" href="https://github.com/JohnVance1/KCG-RIT-SnowGame" target="_blank"> Cold Piece </a>
+                    
+                    <a class="btn-block" href="https://youtu.be/1z6Bacy9Of4" target="_blank"> Video </a>
+                
+                </div>
+            </div>
+          </div>
+            <!-- IGA Final Block -->
+            <div class="shadowSpacing d-flex justify-content-between align-items-start">
+              <div class="row">
+                <div class="col-md-6">
+
+                  <div class="tabBackground">    
+                    <h5 style="text-decoration: underline;">Interactive Game Audio Final Project</h5>
+                    <p class="dateText" style="text-align: center;">April - May 2020</p>
+
+                    <div class="main">
+                      <div class="">
+                        <a class="images" href="images/IGAPic.png" data-fancybox>
+                          <img src="images/IGAPic.png" alt="image"/>
+                        </a>             
+                      </div>
+                      <div class="">
+                        <p class="text">Created custom audio sound effects and music to an already existing Unity tutorial. 
+                          All audio was mixed and mastered using Reaper and automated within Unity using FMOD. 
+                          Other gameplay functions outside of the given tutorial were also included to provide a more rounded game.                 
+                        </p>
+                        <p class="text">
+                          The Unity Tutroial I used for this project is located here : <a href="https://learn.unity.com/project/2d-roguelike-tutorial" target="_blank"> Unity Tutorial </a>
+                        </p>
+                      </div>
+                    </div>
+                    <p class="bodyText">You can view the Build on GitHub below or check out some of the soundtrack on SoundCloud
+                    </p>          
+
+                    <div class="gitHubDuo">
+                      <a class="btn-block" href="https://github.com/JohnVance1/Portfolio/tree/master/Projects/InteractiveGameAudioFinal/game/Final/Build" target="_blank"> IGA Final </a>
+                        
+                      <a class="btn-block" href="https://soundcloud.com/explodingcake/sets/iga-final-sound-samples" target="_blank"> SoundCloud </a>
+                        
+                    </div>
+
+                    <!-- <div class="github">
+                      
+                      <a class="btn-block" href="https://github.com/JohnVance1/Portfolio/tree/master/Projects/InteractiveGameAudioFinal/game/Final/Build" target="_blank"> IGA Final </a>
+                      
+                    </div>             -->
+                  </div>
+                </div>
+
+          <!-- Fifth Row -->
+            <!-- Automic Launcher Block -->
+                <div class="col-md-6">
+
+                  <div class="tabBackground">    
+                    <h5 style="text-decoration: underline;">Automic Launcher</h5>
+                    <p class="dateText" style="text-align: center;">November 2019</p>
+
+                    <div class="main">
+                      <div class="">
+                        <a class="images" href="images/JamForACause.png" data-fancybox>
+                          <img src="images/JamForACause.png" alt="image"/>
+                        </a>               
+                      </div>
+                      <div class="text">
+                        <p>I created the main track of the game over the course of a weekend. The game was made during the Jam for a Cause Game Jam
+                          which was held during the weekend of November 15-16, 2019. The game won "Most Accurate to the Theme" of which was Education. I based the 
+                          main track off of the soundtrack of the movie Intersteller as per the team that I was working with.
+
+                        </p>              
+                      </div>            
+                    </div>
+                    <p class="bodyText">You can view the game on itch.io below 
+                    </p>
+
+                    <div class="github">
+                      
+                      <a class="btn-block" href="https://oneredshoe.itch.io/atomic-launcher" target="_blank"> Automic Launcher </a>
+                      
+                    </div>
+                        
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           
+          
+
+
+
+      </div>
+
+
+      <footer id="footer">
+        <div class="container-fluid">
+          <div class="twelve columns footer">
+            <p>&copy; John Vance | All Rights Reserved</p>
+          </div>
+            
+        </div>
+  
+      </footer>
+
+      
     </div>
-
+      
   </div>
+      
+
 
 
 

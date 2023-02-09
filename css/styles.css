@@ -3,490 +3,248 @@
     overflow-y: auto;
 }
 
-/* Overall  */
-
-@media (min-width: 2500px){
-    /* img.col-md-12.icon{
-        width: 100%;
-        padding: 50px 650px 50px 650px;
-        
-    } */
-    
-}
-
-
-@media (min-width: 880px){
-    .images img{
-        width: 300px;
-    }
-
-    header {
-        font-size: 18px;
-    }
-
-    .projectBlocksLeft{
-        margin: 0px 10px 25px 50px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-        
-    }
-    
-    .projectBlocksRight{
-        margin: 0px 50px 25px 10px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-    }
-    
-    .projectBlocksCenter{
-        margin: 0px 65px 25px 65px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-        
-    }
-
-    
-
-
-
-    .aboutBlock{
-        margin: 0px 200px 85px 200px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-    }
-
-    .resumeBlock{
-        margin: 0px 200px 0px 200px;
-        padding: 0px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-    }
-
-    .contact{
-        margin: 125px 20px 125px 0px;
-        padding: 0px 50px 0px 50px;
-        text-align: center;
-    
-    }
-    
-    .display-3{
-        font-size: 10px;
-
-    }
-
-}
-
-@media (max-width: 1000px){
-    .images img{
-        width: 150px;
-    }
-
-    .projectBlocksLeft{
-        margin: 0px 50px 25px 50px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-    }
-    
-    .projectBlocksRight{
-        margin: 0px 50px 25px 50px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-    }
-    
-    .projectBlocksCenter{
-        margin: 0px 65px 25px 65px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-        
-    }
-
-    /* img.col-md-12.icon{
-        width: 100%;
-        padding: 50px 300px 100px 300px;
-    } */
-    .display-3{
-        font-size: 10px;
-
-    }
-    
-    
-}
-
-@media (max-width: 1350px){
-    .images img{
-        width: 225px;
-    }
-    header {
-        font-size: 16px;
-    }
-
-    .projectBlocksLeft{
-        margin: 0px 50px 25px 50px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-    }
-    
-    .projectBlocksRight{
-        margin: 0px 50px 25px 50px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-    }
-    
-    .projectBlocksCenter{
-        margin: 0px 65px 25px 65px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-        
-    }
-
-    /* img.col-md-12.icon{
-        width: 100%;
-        padding: 50px 300px 50px 300px;
-        
-    } */
-
-    .display-3{
-        font-size: 10px;
-
-    }
-}
-
-
-@media (max-width: 1170px){
-    .images img{
-        width: 150px;
-    }
-
-    .projectBlocksLeft{
-        margin: 0px 50px 25px 50px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-    }
-    
-    .projectBlocksRight{
-        margin: 0px 50px 25px 50px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-    }
-    
-    .projectBlocksCenter{
-        margin: 0px 65px 25px 65px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-        
-    }
-
-    /* img.col-md-12.icon{
-        width: 100%;
-        padding: 50px 250px 100px 250px;
-    } */
-
-    .aboutBlock{
-        margin: 0px 25px 85px 25px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-    }
-    .contact{
-        margin: 125px 25px 125px 25px;
-        text-align: center;
-    
-    }
-
-    .display-3{
-        font-size: 10px;
-
-    }
-    
-    
-    
-}
-
-@media (max-width: 885px){
-    .images img{
-        width: 125px;
-    }
-    .display-3{
-        font-size: 10px;
-
-    }
-    /* img.col-md-12.icon{
-        width: 100%;
-        padding: 50px 200px 75px 200px;
-    } */
-    
-}
-
-@media (max-width: 769px){
-    .images img{
-        width: 150px;
-    }
-    header {
-        font-size: 10px;
-    }
-    .display-3{
-        font-size: 10px;
-
-    }
-    /* img.col-md-12.icon{
-        width: 100%;
-        padding: 50px 150px 100px 150px;
-    } */
-}
-
-@media (max-width: 550px){
-    .images img{
-        width: 150px;
-    }
-    header {
-        font-size: 10px;
-    }
-    .display-3{
-        font-size: 10px;
-
-    }
-    /* img.col-md-12.icon{
-        width: 100%;
-        padding: 50px 125px 100px 125px;
-    } */
-}
-
-@media (max-width: 450px){
-    .images img{
-        width: 150px;
-    }
-    header {
-        font-size: 10px;
-    }
-    /* img.col-md-12.icon{
-        width: 100%;
-        padding: 50px 75px 100px 75px;
-    } */
-    .aboutBlock{
-        margin: 0px 0px 85px 0px;
-        padding: 20px 0px 0px 0px;
-        background-color: #dbdbdb;
-        /* box-shadow: 20px 20px 5px grey; */
-        
-    }
-    .contact{
-        /* margin: 125px 25px 125px 25px; */
-        text-align: center;
-    
-    }
-    .display-3{
-        font-size: 10px;
-
-    }
-}
-
-/* @media (min-width: 420px){
-    .images{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-} */
-
-.projectBlocksLeft, .projectBlocksRight, .projectBlocksCenter, .aboutBlock{
-    box-shadow: 5px 5px 5px 0px black;
-
-}
-
-img.col-md-12.icon{
-    width: 40%;
-    padding: 50px 100px 65px 100px;
-    
-}
-
-h1{
-    margin: 20%;
-    border: 20px solid white;
-    padding: 5%;
-    text-align: center;
-
-}
+:root {
+    --white: #EFF3FB;
+    --offWhite: #A1ACF7;
+    --blue: #462FDE;
+    --purple: #5E009E;
+    --pink: #A935DB;
+    --black: #111;
+  }
 
 .header{
     padding: 50px 50px 25px 50px;
-    color: white;
-    margin: 3%;
+    color: var(--white);
     /* border: 20px solid white; */
     /* padding: 50px 0px 0 0px; */
     text-align: center;
 }
 
-.form{
+
+/* Overall  */
+
+@media (max-width: 400px) {
+    h1{
+        border: none;
+
+    }
+}
+
+@media (min-width: 400px) {
+    h1{
+        border: 20px solid var(--white);
+
+    }
+}
+
+.box{
+    position: absolute;
+}
+
+.animate{
+    position: relative;
+
+}
+
+#header{
+    padding-left: 15px;
+
+}
+
+.display-3{
+    overflow: hidden;
+    font-family: 'Poiret One', sans-serif;
+}
+
+h1{
+    margin: 20%;
+    padding: 5%;
     text-align: center;
-    margin-top: 20px;
+
 }
 
-h3.container-fluid{
+#break{
+    background-color: var(--white);
+    padding: 20px 0px;
     text-align: center;
-    /* margin-top: 85px; */
-    /* margin-bottom: 100px; */
-    margin: 85px 0px 100px 0px;
-    height: 35px;
-}
-
-h4.container-fluid{
-    text-align: center;
-    height: 35px;
-
-}
-
-h4.container-fluid{
-    text-align: center;
-    height: 35px;
-
-}
-
-header, .h3, .navBar{
-    font-family: 'Poiret One', cursive;
-}
-
-h3.container-fluid, h4.container-fluid{
-    font-family: 'Muli', cursive;
-    
-
-}
-
-.pic:focus{
-    outline: 0;
-}
-
-p{
-    margin: 10px;
-    font-family: 'Muli', sans-serif;
-}
-
-.gitText{
-    text-align: center;
+    border-top: var(--black) solid 5px;
+    /* border-bottom: #111 solid 5px; */
+    box-shadow: 0px 10px 20px;
+    margin-bottom: 30px;
 }
 
 .bodyText{
-    margin-top: 15px;
-    padding: 10px 10px;
+    text-align: center;
+    margin: 20px 10px;
+
+}
+
+.dateText, .bodyText, .github, footer{
+    font-family: 'Muli', sans-serif;
+
+}
+
+h5{
+    font-family: 'Raleway', sans-serif;
+}
+
+.text{
+    margin: 10px 25px;
 }
 
 h5{
     margin: 10px;
-    margin-bottom: 0px;
-    font-family: 'Raleway', sans-serif;
-    overflow: hidden;
+    font-family: 'Muli', cursive;
+}
+
+img{
+    width: 100%;  
+    max-width: 300px;
+}
+
+footer{
     text-align: center;
+}
 
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.rounded-circle{
+    border: var(--purple) solid 5px;
+}
+
+.profilePic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    margin-top: 20px;
+}
+
+.aboutMeText{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.github{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.gitHubDuo{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headLinks{
+    text-align: center;
+    display: flex;
 
 }
 
-.headLinks a{
-    color: white;
+.gitHubDuo{
+    font-size: 24px;
 }
 
-.headLinks:hover{
-    background-color: #5e009e;
-    transition: 1s;
-}
-
-.headLinks:hover a{
-    background-color: #5e009e;
-    transition: 1s;
-    text-decoration: none;
-    color: #7ccfff;
+.github > a:hover, .gitHubDuo > a:hover, .headLinks > a:hover{
+    background-color: var(--purple);
+    color: var(--offWhite);
     transition: 0.5s;
 }
 
 
-.puzzle{
-    display: inline;
+.github > a, .gitHubDuo > a{
+    text-decoration: none;
+    border-top: var(--purple) solid 2px;
+    cursor: pointer;
+    padding: 22px;
+    width: 100%;
+    color: var(--black);
 
 }
 
-.main{
-    margin: 20px 0px;
-
+.headLinks > a{
+    text-decoration: none;
+    padding: 22px;
+    width: 100%;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Muli', sans-serif;
+    color: var(--white);
+    border: var(--white) solid 1px;
+    margin: 0px;
 }
 
-.puzIMG{
+.logo > img{
+    width: 100px;
+    padding: 30px 0px;
+}
+
+.headLinks{
     text-align: center;
+    padding: 15px;
+
 }
 
-.specialIMG img{
-    margin: 20px;
-    width: 150px;
+
+#bandCamp{
     text-align: center;
-}
-
-.images img{
-    margin: 20px;
-    /* width: 150px; */
-    
-}
-
-.images, .specialIMG{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: var(--white);
 }
 
-.images, footer{
+#bandCamp > a{
+    width: 100%;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#bandCamp > a:hover{
+    background-color: var(--purple);
+    color: var(--offWhite);
+    transition: 0.5s;
+    
+}
+
+.generalBackground{
+    animation: Projects 30s infinite;
+    padding: 0px 0px;
+}
+
+.tabBackground{
+    background-color: var(--white);
+    width: 90%;
+    margin: 5%;
+    margin-top: 0px;
+    box-shadow: 5px 5px 10px var(--black);
+}
+
+.shadowSpacing{
+    padding-bottom: 10px;
+}
+
+h5{
     text-align: center;
-
+    padding: 10px;
 }
-
-footer{
-    margin-top: 50px;
-
-}
-
-.info{
-    text-align: center;
-}
-
-.about{
-    margin: 40px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-
-#submit{
-    margin: 20px 0px;
-}
-
-
 
 .gradientBackground{
     /* position: absolute; */
     padding-top: 85px;
-    background-image: linear-gradient(90deg, blue, blueviolet, rgb(126, 0, 175), blueviolet, blue);
+    background-image: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--purple), var(--blue));
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
     /* background-position: 100% 100%; */
@@ -494,190 +252,45 @@ footer{
 } 
 
 .projectsBackground{
-    /* position: absolute; */
     padding-top: 85px;
-    /* background-image: linear-gradient(90deg, blue, blueviolet, rgb(126, 0, 175), blueviolet, blue); */
-    /* background-size: 400% 400%; */
-    animation: Projects 30s  infinite;
-    /* background-position: 100% 100%; */
+    
 
 } 
 
 .audioBackground{
-    /* position: absolute; */
     padding-top: 85px;
-    /* background-image: linear-gradient(90deg, blue, blueviolet, rgb(126, 0, 175), blueviolet, blue); */
-    /* background-size: 400% 400%; */
+    
     animation: Projects 30s infinite;
-    /* background-position: 100% 100%; */
 
 } 
 
 .aboutBackground{
-    /* position: absolute; */
     padding-top: 85px;
-    /* background-image: linear-gradient(90deg, blue, blueviolet, rgb(126, 0, 175), blueviolet, blue); */
-    /* background-size: 400% 400%; */
+    
     animation: Projects 30s infinite;
-    /* background-position: 100% 100%; */
 
 } 
 
 @keyframes Projects {
 	0% {
-		background-color: blue;
+		background-color: var(--blue);
 	}
 	25% {
-        background-color: blueviolet;
+        background-color: var(--purple);
     }    
 	50% {
-        background-color: rgb(126, 0, 175);
+        background-color: var(--pink);
     }    
     75% {
-        background-color: blueviolet;
+        background-color: var(--purple);
     }
     100% {
-        background-color: blue;
+        background-color: var(--blue);
 	}
 }
 
 
 
-/* --------GitHub Links--------*/
-
-.github{
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Raleway', sans-serif;
-    border-top: 1px solid #5e009e;
-
-}
-
-.githubDouble{
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Raleway', sans-serif;
-    border-top: 1px solid #5e009e;
-    display: block;
-    padding: 0;
-    margin: 0;
-}
-
-a.btn-block{
-    padding: 20px;
-
-}
-
-.github:hover, .githubDouble:hover{
-    background-color: #5e009e;
-    transition: 1s;
-    
-}
-
-.github:hover a, .githubDouble:hover a{
-    text-decoration: none;
-    word-wrap: none;
-    color: #7ccfff;
-    transition: 0.5s;
-
-}
-
-.github a, .githubDouble a{
-    font-size: 1.5rem;
-
-}
-
-
-.box{
-    position: absolute;
-    width: 100%;
-}
-
-.animate{
-    position: relative;
-}
-
-.resume{
-    text-decoration: none;
-    font-size: 24px;
-    margin: 50px;
-    padding-left: 0px;
-    text-align: center;
-    
-}
-
-
-
-div.container-fluid.resume{
-    border-top: 1px solid #5e0093;
-}
-
-div.container-fluid.resume:hover{
-    background-color: #5e009e;
-    color: #7ccfff;    
-    transition: 1s;
-    text-decoration: none;
-
-}
-
-div.container-fluid.resume:hover a{
-    color: #7ccfff;
-}
-
-div.container-fluid.resume > .insideResume:hover a{
-    color: #7ccfff;    
-    transition: 0.5s;
-    text-decoration: none;
-    
-
-}
-
-.rounded-circle{
-    border: 10px solid #5e009e;
-}
-
-
-
-div.container-fluid.resume > a:hover{
-    text-decoration: none;
-    color: white;
-
-}
-
-div.container-fluid.resume:hover > a{
-    color:white;
-
-}
-
-div.container.about > div.row{
-    margin-bottom: 40px;
-}
-
-div.col.h3{
-    padding: 0px;
-
-}
-
-
-
-/* ---------NAV--------- */
-.col.h3 > a{
-    color: white;
-}
-
-.col.h3 > a:hover{
-    color: #7ccfff;
-    cursor: pointer;
-}
-
-.col.h3 > a:visited{
-    color: white;
-}
-
-.navBar{
-    text-align: center;
-    margin-bottom: 25px;
-}
 
 
 
@@ -687,10 +300,12 @@ div.col.h3{
 header {
     width: 100%;
     height: 100%;
-	color: #fff;
-	background-image: radial-gradient(circle, purple, blueviolet, blue);
+	color: var(--white);
+	/* background-image: radial-gradient(circle, var(--pink), var(--purple), var(--blue)); */
 	background-size: 400% 400%;
-	animation: Gradient 15s ease infinite;
+    animation: Projects 30s infinite;
+
+	/* animation: Gradient 15s ease infinite; */
 }
 
 @keyframes Gradient {
