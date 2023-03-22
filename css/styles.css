@@ -13,7 +13,7 @@
   }
 
 .header{
-    padding: 50px 50px 25px 50px;
+    padding: 100px 50px 25px 50px;
     color: var(--white);
     /* border: 20px solid white; */
     /* padding: 50px 0px 0 0px; */
@@ -34,6 +34,27 @@
     h1{
         border: 20px solid var(--white);
 
+    }
+}
+
+@media (max-width: 768px) {
+    .headLinks{
+        text-align: center;
+        padding: 15px;
+        padding-top: 25px;
+    }
+
+    .topBlock{
+        padding-top: 100px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .headLinks{
+        text-align: center;
+        padding: 15px;
+        padding-top: 100px;
     }
 }
 
@@ -182,6 +203,9 @@ footer{
     background-color: var(--white);
     border: var(--white) solid 1px;
     margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo > img{
@@ -189,10 +213,8 @@ footer{
     padding: 30px 0px;
 }
 
-.headLinks{
-    text-align: center;
-    padding: 15px;
-}
+
+
 
 
 #bandCamp{
