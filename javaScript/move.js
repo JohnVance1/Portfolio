@@ -1,24 +1,35 @@
-window.addEventListener('mousemove', nutterbutter);
-function nutterbutter(){
-	var _el = document.getElementById('gameProject');
-	_el.style.top = event.clientY + "px";
-	_el.style.left = event.clientX + "px";
+
+window.onload = (function() {
+	SetHeight();
+
+});
+
+
+
+window.onresize = (function() {
+	SetHeight();
+
+});
+
+
+function SetHeight(){
+	var navHeight = document.getElementById("navbar").offsetHeight;
+	var heightGoal = navHeight;
+	document.getElementById("header").style.height = heightGoal + "px";
+
+
 }
 
-// Additionally, there is no requirement to have the initial event	listener be attached to window..
-
-
-// var _el = document.getElementsById('gameProjects');
-// _el.addEventListener('dblclick', function(){
-// 	window.addEventListener('mousemove', nutterbutter);
-// 	_el.addEventListener('dblclick', removeNutter);
-// });
-
-// function removeNutter(){
-// 	window.removeEventListener('mousemove', nutterbutter);
-// 	_el.removeEventListener('dblclick', removeNutter);
-// }
-// function nutterbutter(){
-// 	_el.style.top = event.clientY + "px";
-// 	_el.style.left = event.clientX + "px";
-// }
+// function myFunction() {
+// 	document.getElementById("dropdownPersonal").classList.toggle("show");
+//   }
+  
+//   // Close the dropdown if the user clicks outside of it
+//   window.onclick = function(e) {
+// 	if (!e.target.matches('.drop-dwn')) {
+// 	var myDropdown = document.getElementById("dropdownPersonal");
+// 	  if (myDropdown.classList.contains('show')) {
+// 		myDropdown.classList.remove('show');
+// 	  }
+// 	}
+//   }
