@@ -12,10 +12,22 @@ window.onresize = (function() {
 });
 
 
+// function SetHeight(){
+// 	var navHeight = document.getElementById("navbar").offsetHeight;
+// 	var heightGoal = navHeight;
+// 	document.getElementById("header").style.height = heightGoal + "px";
+
+
+// }
+
 function SetHeight(){
-	var navHeight = document.getElementById("navbar").offsetHeight;
-	var heightGoal = navHeight;
-	document.getElementById("header").style.height = heightGoal + "px";
+	// var header = document.getElementById("navbar").offsetHeight;
+	// var viewportHeight = window.innerHeight;
+	// // var breakHeight = document.getElementById("break").offsetHeight;
+	// var footerHeight = document.getElementById("footer").offsetHeight;
+
+	// var heightGoal = viewportHeight - header - footerHeight;
+	// document.getElementById("box").style.height = heightGoal + "px";
 
 
 }
