@@ -120,6 +120,57 @@ button{
     display: inline-block;
 } */
 
+/*      DEV BLOG        */
+
+.post-background{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 20px;
+}
+
+.post-preview{
+    text-align: left;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.post-preview > a{
+    text-decoration: none;
+}
+
+.post-title{
+text-decoration: none;
+    color: var(--white);
+}
+
+.post-subtitle{
+    text-align: left;
+    padding: 0;
+    margin: 0px 0px 10px 0px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.post-content-preview{
+    text-decoration: none;
+    color: var(--offWhite);
+    margin: 0px 0px 10px 0px;
+
+}
+
+.post-meta{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.reading-time{
+
+}
+
+.devBlogButton{
+    padding-top: 20px;
+}
+
 .fullBreak{
     background-color: var(--black);
     padding: 100px 0px;
@@ -142,6 +193,43 @@ button{
     box-shadow: 0px 10px 20px var(--black);
 
 }
+
+.blogBody{
+    background-color: var(--black);
+    padding: 20px 20px;
+    text-align: left;
+    font-size: 18px;
+    /* border-bottom: #111 solid 5px; */
+    margin: 50px;
+    color: var(--white);
+    box-shadow: 0px 10px 20px var(--black);
+
+}
+
+.blogSubtitle{
+    background-color: var(--black);
+    padding: 20px 20px;
+    text-align: left;
+    font-size: 22px;
+    /* border-bottom: #111 solid 5px; */
+    margin: 50px 50px 20px 50px;
+    animation: TextColor 30s infinite;
+    box-shadow: 0px 10px 20px var(--black);
+
+}
+
+.blogImage{
+    background-color: var(--black);
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 22px;
+    /* border-bottom: #111 solid 5px; */
+    margin: 50px 50px 50px 50px;
+    animation: TextColor 30s infinite;
+    box-shadow: 0px 10px 20px var(--black);
+
+}
+
 
 .breakSeperator{
     padding: 50px 0px;
@@ -209,7 +297,7 @@ footer{
     margin-top: 20px;
 }
 
-.github, .title{
+.github, .title, .title-alt{
     text-align: center;
     display: flex;
     justify-content: center;
@@ -256,6 +344,14 @@ h1.display-4 > a:hover{
     padding: 22px;
     width: 100%;
     color: var(--white);
+}
+
+.title-alt{
+    text-decoration: none;
+    /* border-bottom: var(--purple) solid 2px; */
+    padding: 22px;
+    width: 100%;
+    color: var(--black);
 }
 
 .gitHubDuo{
@@ -331,7 +427,7 @@ h1.display-4 > a:hover{
 .selfText{
     text-align: left;
     color: var(--white);
-    padding: 0px 40px;
+    padding: 0px 100px;
 }
 
 
@@ -394,6 +490,17 @@ h1.display-4 > a:hover{
     box-shadow: 0px 10px 20px var(--black);
 
     color: var(--white);
+    border-radius: 4px;
+}
+
+.tabBackground-alt{
+    animation: Projects 30s infinite;
+    /* width: 90%; */
+    margin: 50px;
+    margin-top: 0px;
+    /* box-shadow: 5px 5px 10px var(--black); */
+
+    color: var(--black);
     border-radius: 4px;
 }
 

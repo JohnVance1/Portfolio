@@ -24,13 +24,13 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   
   <!-- JavaScript 
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="javaScript/move.js"></script>
+  <script src="/javaScript/move.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
@@ -45,12 +45,12 @@
   
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="/image/png" href="/images/favicon.png">
 
   <script>
     
     $(function(){
-      $("#header").load("Header.html");
+      $("#header").load("/Header.html");
       
 
     });  
@@ -74,18 +74,39 @@
 
       <h2 class="break">Dev Blog</h2>
 
-      
+<!--       
       <div class="fullBreak">
 
         <h1>Coming Soon!</h1>
 
+      </div> -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 mx-auto post-background">
+            <article class="post-preview">
+              <a href="/potionGame/post_1.html">
+                <h2 class="post-title">First Devblog Post!</h2>
+                <!-- <h3 class="post-subtitle">Initial design and creating the MVI</h3> -->
+                <div class="post-content-preview">
+                  Welcome! You've stumbled upon the development blog for my 2D isometric alchemy game.
+                  Here I'll be posting weekly updates on the game as a way to both have a record 
+                  of my progress as well as keep myself motivated...
+                </div>
+              </a>
+              <p class="post-meta">
+                Posted on May 22, 2023
+              </p>
+            </article>
+          </div>
+        </div>
       </div>
 
 
       <footer>
         <div class="container">
           <div class="twelve columns footer">
-            <p>&copy; John Vance | All Rights Reserved</p>
+            &copy; John Vance | All Rights Reserved
           </div>
           
         </div>

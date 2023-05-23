@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>John Vance's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+  <!-- JavaScript 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/javaScript/move.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+   <!-- FancyBox 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+   -->
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="/image/png" href="/images/favicon.png">
+
+  <script>
+    
+    $(function(){
+      $("#header").load("/Header.html");
+      
+
+    });  
+    
+
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div class="animate generalBackground">
+
+      <div id="header">
+  
+      </div>
+      
+
+
+        <h2 class="break">
+          <div>
+            First Devblog Post!
+            
+          </div>
+          
+        </h2>
+
+        <h4 class="blogSubtitle">Intro</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          Welcome! You've stumbled upon the development blog for the game The Alchemist(working title).
+          Here I'll be posting weekly updates on my progress as a way to both have a record 
+          of my progress as well as keep myself motivated.
+        </p>
+
+        <p class="blogBody">
+          This game is a solo project that I have been developing for around a month 
+          now. I recently graduated from Rochester Institute of Technology and while I 
+          worked on my Capstone, The Shattering Swords, with 10 others and a few Game Jams
+          alone, this is the first game I have worked on solo with a large scope. The 
+          project will culminate in a release however because of the early stage it is in 
+          I don't have a release schedule yet.          
+        </p>
+
+
+        <h4 class="blogSubtitle">Background</h4>
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          Since this is my first post I'll start by explaining the game I'm working on. The game
+          is a 2D isometric adventure game with the current working title, The Alchemist, created 
+          in Unity. Within the game the player discovers and catalogs ingredients to make potions, 
+          has a small greehouse where they can grow herbs, help out the villagers, and heal the 
+          surrounding land through the potions they create. 
+        </p>
+
+        <p class="blogBody">
+          You play as an alchemist that has been assigned to the town to cataloge the various 
+          herbs and discover why the surrouding land is becoming corrupted. When you arrive the 
+          town has been produced to ruins from the surrounding corruption and with your ability
+          to harness the local wildlife you craft potions and research new ingredients to help
+          clense the town. Further into the forest you find more herbs, stronger corruption, and 
+          perhaps what is behind it. 
+        </p>
+
+        <h4 class="blogSubtitle">Current Progress</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          My current progress has mainly been in the systems and overarching design of the game.
+          In the last month I've worked on the design for the cauldron, growing herbs, and foreging.
+          The core loop of the game will involve the player going out and gathering herbs, making 
+          potions, helping the town/the land, and repeating. 
+        </p>
+
+        <div class="blogBody">    
+          <div class="row d-flex justify-content-around">
+            <img class="col-md-12 blogImage" style="max-width: 400px;" src="/images/AlcGame/AlcGame_Pickup.gif" alt="Pickup Example"/></img>
+          </div>       
+          <p>
+            Currently the player is able to pick up herbs (the green objects) which are added to their inventory.
+            I want the player to have easy access to their inventory to see both what potions
+            and herbs they have. The overall functionallity is there however the look and feel
+            will be updated later.
+          </p>
+        </div>
+
+        <div class="blogBody">  
+          <div class="row d-flex justify-content-around blogImage">
+            <img class="col-md-6" style="max-width: 400px;" src="/images/AlcGame/AlcGame_PlaceFarm.gif" alt="Place in Farm Example"/></img>
+
+            <img class="col-md-6" style="max-width: 400px;" src="/images/AlcGame/AlcGame_GatherFarm.gif" alt="Gather from Farm Example"/></img>
+          </div>
+          <p>
+            Also the player is able to use a farm plot (the orange space) to plant and grow herbs.
+            The player selects the herb they want to plant from their inventory and then after some time 
+            the plant reaches it's fully grown stage and the player can harvest it.
+          </p>
+        </div>
+
+        <div class="blogBody">  
+          <div class="row d-flex justify-content-around">
+            <img class="col-md-12 blogImage" style="max-width: 400px;" src="/images/AlcGame/AlcGame_MakePotionSimple.gif" alt="Make Potion Example"/></img>
+          </div>        
+          <p>
+            The player can also make a very simple potion using the one herb that they are able to collect.
+            The player uses the interact button, currently bound to Mouse 0, and if they have the required
+            herb, the potion is placed in their inventory and the herb is removed. 
+          </p>
+        </div>
+
+
+
+      <footer>
+        <div class="container">
+          <div class="twelve columns footer">
+            &copy; John Vance | All Rights Reserved
+          </div>
+          
+        </div>
+  
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+</html>
