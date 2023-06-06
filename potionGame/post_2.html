@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>John Vance's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+  <!-- JavaScript 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/javaScript/move.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+   <!-- FancyBox 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+   -->
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="/image/png" href="/images/favicon.png">
+
+  <script>
+    
+    $(function(){
+      $("#header").load("../Header.html");
+      
+
+    });  
+    
+
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div class="animate generalBackground">
+
+      <div id="header">
+  
+      </div>
+      
+
+
+        <h2 class="break">
+          <div>
+            Researching Herbs and Making Potions 
+            
+          </div>
+          
+        </h2>
+
+        <h4 class="blogSubtitle">Intro</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          So first off I decided to post these every two weeks instead of every week. I found that 
+          I was only halfway through the next feature when it was time to post a new update and 
+          decided it would be better to have a full feature shown off rather than half of one. 
+        </p>        
+
+
+        <h4 class="blogSubtitle">Researching Herbs</h4>
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          Speaking of the feature, the main feature that I designed and prototyped this week was the 
+          researching mini-game that the player interacts with everytime they discover a new herb. 
+          Contained within the player's house is a research station that the player uses to discover 
+          each herb's properties. Here they learn various things about the herb such as elemental properties
+          and the ideal preperation method. 
+        </p>
+
+        <div class="blogBody">
+          <p>
+            For the actual gameplay for this feature I struggled for a while trying to figure out what 
+            would be the best way to convey a "research" game. I knew that it had to have a few components:
+            <ul>
+              <li>Mechanics must be relatively simple to understand since it's a section 
+                of the gameplay not all of it.</li>
+              <li>Must be scaleable to be harder for rarer herbs.</li>
+              <li>Needs to be a puzzle so players feel like they are researching.</li>
+            </ul>
+            After researching and looking at other games for inspiration I finally came across a logic puzzle 
+            that I could refactor to fit all of my criteria: Masyu.
+          </p>
+        </div>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          For those unfamiliar, Masyu is a logic puzzle laid out on a grid with white and black dots ocupying 
+          a select few grid spaces. The goal is to connect all of the dots in a loop while obeying each colored dots'
+          rules. For black dots, you need to turn as the line passes through it and for white dots you need to
+          go straight through. Additionally, the spaces before and after the black dots have to be straight while 
+          for the white dots they need to turn. 
+        </p>
+
+        
+        
+        <div class="blogBody">    
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex justify-content-center">
+                <img class="blogImage" style="max-width: 400px;" src="/Portfolio/images/AlcGame/ResearchGamePic.PNG" alt="Pickup Example"/></img>
+              </div>
+              <p style="text-align: center;">Base Game</p>
+              <p style="text-align: center;">(Green == Start, Red == End)</p>
+
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex justify-content-center">
+                <img class="blogImage" style="max-width: 400px;" src="/Portfolio/images/AlcGame/ResearchGameCompleted.PNG" alt="Pickup Example"/></img>
+              </div>
+              <p style="text-align: center;">Completed Game</p>
+
+            </div>
+          </div>       
+          <p>
+            
+          </p>
+        </div>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          I decided to change around the game slightly and remove the requirement for the before and after lines
+          as well as the requirement for a loop. Each mini-game will differ based on the herb and will be hand crafted
+          to said herb. Instead of a loop there will be a set amount of end points The difficulty of each puzzle 
+          will involve the placement/number of dots as well as the number of end points. The white and black dots are 
+          replaced with elemental runes corresponding to the elements contained in the herb. The player will need to 
+          connect all of the runes in one or more lines with the end of each line connecting to an end point. 
+        </p>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          This system would allow for the player to come up with their own solutions to each game as well as scale complexity
+          as needed. While currently the mechanic is mainly functional, I am really happy with the puzzle mechanic as I feel like games
+          similar to mine struggle to make progression harder within the later stages of the game. 
+        </p>
+
+        <h4 class="blogSubtitle">Using the Cauldron and Making Postions</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          In addition, I worked on a bit on the cauldron component of potion making. I implemented three seperate devices that
+          the player can use to increase or decrease certain attributes. These devices are a distiller, a mortar and pestle, 
+          and a smoker. Each herb can also be included into the cauldron as a raw ingredient to use it's base attributes. 
+          Currently I haven't implemented the herb attribute system so it only outputs the same potion no matter what. 
+        </p>
+
+        <div class="blogBody">    
+          <div class="row d-flex justify-content-around">
+            <img class="col-md-12 blogImage" style="max-width: 400px;" src="/Portfolio/images/AlcGame/CauldronPic.PNG" alt="Cauldron Example"/></img>
+          </div>
+          <p style="text-align: center;">
+            (Red = Distiller,  Orange = Mortar and Pestle,  Blue = Smoker,  Green = Make Potion,  Purple = Cancel,  Black = Cauldron)
+          </p>
+        </div>
+
+        <h4 class="blogSubtitle">Next Sprint: Art</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          For the next sprint I'm planning on figuring out more of the artstyle and attempting to create some of
+          the assets. While I am not particuarly good at art, I have done some pixel art, like the character 
+          currently in the game, however I'm still not sure if I want to do a pixel art style for the game. 
+        </p>
+            
+        <div class="blogBody">
+          <div class="row d-flex justify-content-around">
+            <img class="col-md-12 blogImage" style="max-width: 400px;" src="/Portfolio/images/AlcGame/PlayerCharacter.PNG" alt="Player Character Sprite"/></img>
+          </div>
+        </div>
+
+      <footer>
+        <div class="container">
+          <div class="twelve columns footer">
+            &copy; John Vance | All Rights Reserved
+          </div>
+          
+        </div>
+  
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+</html>

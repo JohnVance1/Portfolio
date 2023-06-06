@@ -211,7 +211,7 @@ text-decoration: none;
     padding: 20px 20px;
     text-align: left;
     font-size: 22px;
-    /* border-bottom: #111 solid 5px; */
+    border-bottom: var(--white) solid 5px;
     margin: 50px 50px 20px 50px;
     animation: TextColor 30s infinite;
     box-shadow: 0px 10px 20px var(--black);
