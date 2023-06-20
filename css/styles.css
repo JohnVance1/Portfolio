@@ -360,7 +360,8 @@ h1.display-4 > a:hover{
 
 .github > a:hover, .gitHubDuo > a:hover,
  .headLinks:hover, .innerDropdown:hover, 
- #navbarDropdown .dropdown-item:hover{
+ #navbarDropdown .dropdown-item:hover,
+ #navbarDropdownProjects .dropdown-item:hover{
     /* background-color: var(--purple); */
     color: var(--blue);
     transition: 0.25s;
@@ -399,12 +400,14 @@ h1.display-4 > a:hover{
 
 }
 
-#navbarDropdown .dropdown-menu{
+#navbarDropdown .dropdown-menu,
+#navbarDropdownProjects .dropdown-menu{
     background-color: var(--black);
 
 }
 
-#navbarDropdown .dropdown-item{
+#navbarDropdown .dropdown-item,
+#navbarDropdownProjects .dropdown-item{
     text-decoration: none;
     color: var(--white);
 
@@ -413,7 +416,8 @@ h1.display-4 > a:hover{
 
 }
 
-#navbarDropdown .dropdown-item:hover{
+#navbarDropdown .dropdown-item:hover
+#navbarDropdownProjects .dropdown-item:hover{
     background-color: var(--black);
 
 }
