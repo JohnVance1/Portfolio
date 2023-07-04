@@ -74,7 +74,7 @@
 
         <h2 class="break">
           <div>
-            Art Art Art
+            Cauldron and NPC Updates
             
           </div>
           
@@ -83,60 +83,68 @@
         <h4 class="blogSubtitle">Intro</h4>
 
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">
-          This sprint's post is going to be a bit of a smaller one as I wasn't able to work on the game a ton last week. 
-          I'm still working out the art style and I think I'm close. I created some temp assets for the time being just 
-          to have something that aren't isometric diamonds and cubes. 
+          So I was able to get the changes into the Cauldron and NPC working faster than I thought I would. I got 
+          both tasks done within the first few days and while neither are release ready, I am happy with the 
+          progress I made on them this sprint. 
         </p>        
 
 
-        <h4 class="blogSubtitle">Moodboards</h4>
+        <h4 class="blogSubtitle">Cauldrons</h4>
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">
-          I created two moodboards to try and get a good understanding of the style that I want. I think I am going 
-          to go the pixel art route as it's what I know best and I think I can come up with something pretty solid using it.
-          The moodboard on the left showcases some of the games that I want to emulate the style/feeling with my game. The
-          first thing is that I want the game to feel cozy so I looked at games like Little Witch in the Woods and Glimmerwick 
-          as examples. The moodboard on the right demonstrates more of the exact isometric feel I'm aiming for.  
+          There were two main aspects of the Cauldron that I wanted to address in this sprint. The first one was that 
+          The initial UI was very confusing and there wasn't a ton of feedback for the player. Additionally none of 
+          the buttons were labeled. I added in a progress bar to each of the three stations to show that they were being 
+          used as well as labeled all of the buttons in the UI. Eventually I want to add in the herbs used on the screen 
+          to show the player what they have used so far however that will be for a later sprint dedicated solely on the 
+          Cauldron.  
+        </p>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">      
+        The second aspect is that there was a bug to where if the player clicked on one device while another one was 
+        active then both would activate despite the second device not having an herb actually placed in it. I fix this 
+        bug by restructuring how herbs were transferred to the device and then cauldron so that the herb was removed 
+        when the device was clicked on instead of after it was finished.   
         </p>
 
         <div class="blogBody">    
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="d-flex justify-content-center">
-                <img class="blogImage" style="max-width: 400px;" src="/Portfolio/images/AlcGame/Moodboard_Left.png" alt="Moondboard_Left"/></img>
+                <img class="blogImage" style="max-width: 800px;" src="/Portfolio/images/AlcGame/AlcGame_CalUI.gif" alt="Caludron UI"/></img>
               </div>
             </div>
 
-            <div class="col-md-6">
-              <div class="d-flex justify-content-center">
-                <img class="blogImage" style="max-width: 400px;" src="/Portfolio/images/AlcGame/Moodboard_Right.png" alt="Moondboard_Right"/></img>
-              </div>
-
-            </div>
+            
           </div>       
           
         </div>       
         
-        <h4 class="blogSubtitle">New Assets</h4>
+        <h4 class="blogSubtitle">NPC Movement</h4>
 
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">
-          Below is a screenshot of all of the new assets that are currently in the game. As I mentioned before These
-          are all very much temp assets and are by no means the final assets for any of these items. 
+          For the NPC's I implemented a movement system to where they move between a set number of points that are 
+          pre-determined. They have a set amount of time that they "wait" at each point before moving to the next one.
+          When the player talks to the NPC they stop moving to display their dialogue and then continue moving after 
+          they finish. The dialogue system itself still needs some work as there isn't anything to it yet but that will 
+          be for a future sprint.
         </p>
 
         <div class="blogBody">    
           <div class="d-flex justify-content-around">
-            <img class="blogImage" style="max-width: 800px;" src="/Portfolio/images/AlcGame/AlcGameNewSprites.PNG" alt="New Sprites"/></img>
+            <img class="blogImage" style="max-width: 800px;" src="/Portfolio/images/AlcGame/AlcGame_NPCMove.gif" alt="NPC Movement"/></img>
           </div>
         </div>
 
-        <h4 class="blogSubtitle">Next Sprint: Cauldron and NPC</h4>
+        <h4 class="blogSubtitle">Next Sprint: MVP Work</h4>
 
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">
-          For the next sprint I want to get the Cauldron all set up and work on some of the NPC behaviors. Right now
-          the Cauldron technically works however it is still very buggy and I'd like to get most of the functionallity
-          fixed. Also, I have some basic dialogue in the game but the NPC's don't really do anything yet. I want to get
-          some sort of pathing implemented in the next sprint. I know this next sprint is going to be a bit more than 
-          the previous ones but I'm hoping that I'll be able to finish both in the two weeks!
+          This next sprint I have actually already started working on since I finished with my main two tasks early. 
+          The next two weeks are going to be focused on getting a decent MVP up and running. Below is the main loop 
+          and as you can see there are a few aspects I still need to work on with the main one's being the helping 
+          villagers and placing the potions into the shrines. This is also going to include some new herbs and actual 
+          potion recipes which I have yet to flesh out. Currently most of the major systems are in place and while I 
+          know that this will be one of my largest sprints, I'm hoping that by the end I'll have something more 
+          tangible for a gameplay loop that isn't only written down.    
         </p>
        
 
