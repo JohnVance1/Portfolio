@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>John Vance's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+  <!-- JavaScript 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/javaScript/move.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+   <!-- FancyBox 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+   -->
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="/image/png" href="/images/favicon.png">
+
+  <script>
+    
+    $(function(){
+      $("#header").load("../Header.html");
+      
+
+    });  
+    
+
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div class="animate generalBackground">
+
+      <div id="header">
+  
+      </div>
+      
+
+
+        <h2 class="break">
+          <div>
+            Code Architecture
+            
+          </div>
+          
+        </h2>
+
+        <h4 class="blogSubtitle">Intro</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          After looking at the code for the last two weeks I think I've gotten it to the state where I'm going to 
+          start developing again. From looking at all of the scripts I've made I have some better ideas on how 
+          to structure the classes to have each script make a little more sense. I first started by just detailing all 
+          of the scripts and what was contained in them and then went and modified them to be more concise.  
+        </p>        
+
+
+        <h4 class="blogSubtitle">UML Class Diagram</h4>
+
+        <div class="blogBody">    
+          <div class="d-flex justify-content-around">
+            <img class="blogImage" style="max-width: 800px;" src="/Portfolio/images/AlcGame/AlcGame_ClassDiagram.PNG" alt="NPC Movement"/></img>
+          </div>
+        </div>
+
+        <h4 class="blogSubtitle">Main Changes</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          The above image shows the current class diagram that I came up with. One of the main differences is the 
+          Player class which has been split up into a few different scripts. The current Player class has a lot 
+          of lines and is kind of bloated. A goal of mine for the next sprint is to update the Player class to 
+          reflect these changes and have each script running one action like movement, interaction, and UI.  
+        </p>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          I also realized that the connection between the interactable objects and their UI can be streamlined. 
+          Particularly the Cauldron_UI script where the devices could definitely be reworked to be less complex. 
+          My plan is to separate the UI and objects so that the UI elements are just UI elements and aren't 
+          storing values that the objects themselves should be storing. This includes the Cauldron, Research Station, 
+          Devices, and Inventory.    
+  
+        </p>        
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          The one section of the code that I have yet to flesh out is the quest system. It will definitely need a large 
+          overhaul and is something that I am going to put on the backburner for now. The currently implemented quest 
+          system isn't close to the final one and was mainly just a patch to get in the quest for the previous sprint. 
+          I want to get the architecture changes implemented and functional, as well as getting the game to look somewhat 
+          decent, before moving onto any new systems.
+        </p>        
+
+        
+
+        <h4 class="blogSubtitle">Next Sprint: Resturcturing Code</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          The next sprint I want to focus on implementing the changes I've made in the class diagram. specifically cleaning 
+          up the connection between the interactable objects and their UI as well as separating the Player class. As I go 
+          along I will probably end up adding and editing the current class diagram and I want to make sure that it is fully 
+          updated before I continue to work on anything else. I'm also going to make sure that any features I work on next 
+          will have their own class diagram as well as user stories to help me along the development pipeline. If I have any 
+          time near the end of the sprint I'm planning on searching for some temp assets as the ones I currently have I'm still 
+          not satisfied with.
+     
+        </p>
+       
+
+      <footer>
+        <div class="container">
+          <div class="twelve columns footer">
+            &copy; John Vance | All Rights Reserved
+          </div>
+          
+        </div>
+  
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+</html>
