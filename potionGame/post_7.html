@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>John Vance's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+  <!-- JavaScript 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/javaScript/move.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+   <!-- FancyBox 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+   -->
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="/image/png" href="/images/favicon.png">
+
+  <script>
+    
+    $(function(){
+      $("#header").load("../Header.html");
+      
+
+    });  
+    
+
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div class="animate generalBackground">
+
+      <div id="header">
+  
+      </div>
+      
+
+
+        <h2 class="break">
+          <div>
+            Restuctuing Code and New Artstyle
+            
+          </div>
+          
+        </h2>
+
+        <h4 class="blogSubtitle">Intro</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          During the last two weeks I managed to restructure the code based off of the new UML diagram and clean up 
+          a lot of the spaghetti code. Because of cleaning up a lot of the code, I also managed to fix some bugs 
+          surrounding the Cauldron system which I was really happy with! Also, I did have time to look over the artstyle 
+          and while I did find some good isometric assets I could use, I have decided to go with a slightly different 
+          angle of isometric. Because I talked a lot about the code restructuring and the class diagram in my last post, 
+          this post is mainly going to be focused on the change and artstyle. 
+             
+        </p>        
+
+
+        <h4 class="blogSubtitle">New Style Vs. Old Style</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          While I am still keeping the isometric look, I am changing the angles that each grid space occupies. 
+          For those who are unfamiliar with isometric art/pixel art, true isometric angles are set at 30&deg; 
+          with each square's left and right corner angles each at a total of 60&deg; and the top and bottom at 
+          120&deg;. However in pixel art having the exact angles being 30&deg; makes the edge of the space look 
+          too jagged so instead we shorten it to 26.5&deg; to make the edges cleaner.    
+        </p>
+
+        <div class="blogBody"> 
+          <div class="row">
+            <div class="col-md-6">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 600px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_TrueIsoLine.PNG" alt="Pixel Art Angles"/></img>
+              </div>
+              <p style="text-align: center;"> True Isometric (30&deg;) </p>
+            </div>
+            <div class="col-md-6">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 600px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_IsoLine.PNG" alt="Pixel Art Angles"/></img>
+              </div>
+              <p style="text-align: center;"> Pixel Art Isometric (26.5&deg;)</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="blogBody">
+          <div class="row">
+            <p class="col-md-7" style="margin: auto">
+              The main change that I am making is to increase the angles of the left and right corners to roughly 70&deg; 
+              instead of the standard 60&deg;. I personally like the look of this style more and one of my main inspirations for 
+              this is from the game Death's Door which uses this expanded isometric style.   
+
+            </p>   
+
+            <div class="col-md-4">    
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_NewIsoLine.PNG" alt="Angle Change"/> </img>
+              </div>
+              <p style="text-align: center;">Changed Isometric (~35&deg;)</p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="blogBody">    
+          <div class="d-flex justify-content-around">
+            <img class="blogImage" style="max-width: 800px;" 
+            src="/Portfolio/images/AlcGame/Deaths_Door.PNG" alt="Death's Door"/></img>
+          </div>
+          <p style="text-align: center;"> Death's Door</p>
+
+        </div>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          I really want the player to be able to see more of the ground than the sides of objects which is one of the main 
+          reasons for the change. I really wasn't happy with the current perspective and I feel like a straight top down 
+          perspective would make the game feel a little flat and hard to differentiate herbs and creatures that are close together.
+        </p>        
+
+        
+
+        <h4 class="blogSubtitle">Next Sprint: Add Temp Assets and Clean Up Functionality</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          The first thing I want to accomplish for the next sprint is to implement the same assets just in the new perspective. 
+          I've already started working on some assets and I'm not expecting this to take much time. I'm also planning on going 
+          a simpler route and I won't be spending as much time on the new assets as I did in the old ones.     
+
+
+        </p>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          After I finish that up I'm going to start cleaning up the currently implemented functionality of the current systems 
+          so I have a relatively polished MVP completed. I'm really looking forward to feeling proud enough of this project 
+          to show it off to others and I think the first step to getting there is making sure that the base mechanics are working 
+          together well. Some of the systems I'm planning to work on are the NPC/Dialogue system, the Researching System, and the 
+          Cauldron system. I'm also planning on updating the Class diagram I made with any changes I happen to end up implementing.     
+
+
+        </p>
+       
+
+      <footer>
+        <div class="container">
+          <div class="twelve columns footer">
+            &copy; John Vance | All Rights Reserved
+          </div>
+          
+        </div>
+  
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+</html>
