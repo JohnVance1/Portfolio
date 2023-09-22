@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>John Vance's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+  <!-- JavaScript 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/javaScript/move.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+   <!-- FancyBox 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+   -->
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="/image/png" href="/images/favicon.png">
+
+  <script>
+    
+    $(function(){
+      $("#header").load("../Header.html");
+      
+
+    });  
+    
+
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div class="animate generalBackground">
+
+      <div id="header">
+  
+      </div>
+      
+
+
+        <h2 class="break">
+          <div>
+            UI Clean-up and Changes
+            
+          </div>
+          
+        </h2>
+
+        <h4 class="blogSubtitle">Intro</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          I was able to do a decent amount this sprint and the majority of which was spent on 
+          updating the game's UI. To start, I'm still in the process of switching over everything 
+          from Canvas to Unity's UI Builder/Toolkit which I feel is a lot easier to use and iterate 
+          on. I have mostly finished the base inventory and then I am going to start on the other UI 
+          systems that I currently have implemented.  
+ 
+             
+        </p>        
+
+
+        <h4 class="blogSubtitle">Old UI to New</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          The current UI was a little clunky and while it worked, it was a little too complicated 
+          programming wise for what it did. About halfway into the sprint I found the UI Builder 
+          which I had never used before and I really like it compared to the original Canvas structure. 
+          Below I've put some images as to the what the old and new UI look like and as with everything 
+          style wise it is 1000% not final and is definitly going to change. The current style I have 
+          for the UI is based off of a tutorial I did to learn the UI builder and while it doesn't 
+          fit the aestetic I want, it's a good enough placeholder. 
+
+        </p>
+
+        <div class="blogBody"> 
+          <div class="row">
+            <div class="col-md-6">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 600px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_InvOld.PNG" alt="Old Style - Inventory"/></img>
+              </div>
+              <p style="text-align: center;"> Old Style </p>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 600px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_InvNew.PNG" alt="Old Style - Inventory"/></img>
+              </div>
+              <p style="text-align: center;"> New Style </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          The UI Builder is really nice as a lot of the styleing is done similarly to CSS in web 
+          development. I have been doing web tutoring for a year or so now in my free time so it 
+          makes a lot more sense to me than having to relearn a whole new system for Canvas. Also, 
+          implementing the UI is A LOT easier with the fact that each UI element is a single GameObject 
+          with the herarchy being in the UI Builder window. Another nice feature is that you can make 
+          templates without having to create prefabs and you can just denote that a script is a visualelement 
+          without creating an entire new GameObject for it. I know that this section is a bit long but the 
+          last really helpful aspect is that because they aren't GameObjects in the world the ability to 
+          do methods like OnPointerDown() and OnPointerMove() are extremely easy to implement. 
+
+          <br><br>
+
+          Overall, the UI Builder/Toolkit is extremely helpful and I am surprised I haven't used this feature sooner.
+
+        </p> 
+        
+        <h4 class="blogSubtitle">New UI Features</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          While I mainly worked on shifting everything over, I did have some time to implement a new 
+          feature for the Inventory which is a click and drag to organize and adjust items to how a player 
+          wants. There are some bugs to work out however I think that it will allow for players to better find 
+          their items and I am hoping to get the final bugs fixed in the next sprint. 
+        </p> 
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          I also worked to fix the funtionallity on the Masyu game and hooked it up to the MVP loop so now 
+          players have to research the herb before being able to use it in the cauldron. Additionally, they 
+          can't research an herb more than once.
+
+          <br><br>
+
+          Eventually I want to let the player be able to use the herbs in potions whether they have researched it 
+          or not and the player just won't know the effects that the herb gives but for simplicity sake I am just going 
+          to prevent players from using them so they can playtest the researching mini-game. 
+        </p> 
+
+        <h4 class="blogSubtitle">Next Sprint: Switch Over UI </h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          Most of the next two weeks are going to be focused on moving all of the UI from the current Canvas system 
+          to the UI Toolkit system. If I have some extra time I want to have the herbs that are in the cauldron show up 
+          on the side to indicate what has been used so far. I am assuming now that I know the UI Toolkit better I will 
+          get to achomplish that this sprint but we will see how busy I end up being this week!
+
+
+        </p>
+
+        
+       
+
+      <footer>
+        <div class="container">
+          <div class="twelve columns footer">
+            &copy; John Vance | All Rights Reserved
+          </div>
+          
+        </div>
+  
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+</html>
