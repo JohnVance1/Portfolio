@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>John Vance's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+  <!-- JavaScript 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/javaScript/move.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+   <!-- FancyBox 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+   -->
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="/image/png" href="/images/favicon.png">
+
+  <script>
+    
+    $(function(){
+      $("#header").load("../Header.html");
+      
+
+    });  
+    
+
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div class="animate generalBackground">
+
+      <div id="header">
+  
+      </div>
+      
+
+
+        <h2 class="break">
+          <div>
+            UI Changes and New Quest System
+            
+          </div>
+          
+        </h2>
+
+        <h4 class="blogSubtitle">Intro</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          This sprint I actually got quite a bit done. The I managed to get the Research mini-game working 
+          though there are some small bugs I'll need to get ironed out. The other major feature I had time for 
+          this sprint was the quest system. I found an amazing tutorial on a Unity quest system and I decided to 
+          replicate it as an initial system and then build off of it to suit the game. 
+             
+        </p>        
+
+
+        <h4 class="blogSubtitle">Updated Research Game UI</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          I finally finished up the UI from last sprint and after some trouble being able to display the lines 
+          correctly I managed to get the whole system moved over to the new UI. The main issue I had was that 
+          originally I was displaying the connecting lines as with Gizmos and while it was working as a short 
+          term solution it was something I knew I would need to replace. After moving over to the new UI system,
+          I realized that the placement of the UI elements and the Gizmo system I was using weren't compatible.  
+          getting the screen transforms of the new UI VisualElements was not going well and on top of that the 
+          Gizmos I was originally displaying were being displayed underneath the new UI. To solve this I learned 
+          how to use the Vector API to draw lines between the spaces where the edges were. This actually required 
+          me to update to a 2022 version of Unity since that's when the Vector API was introduced. I put the code 
+          for displaying the lines within the Space class itself as that was the simplest way to implement it.
+
+          <br>
+
+          I also added in the white and black spaces which now also function properly. There is still no visual 
+          indicator that the spaces are either correct or incorrect however since this sprint was just for transfering 
+          the UI over to the new system I am planning on focusing on that during a later sprint.
+
+
+        </p>
+
+        <div class="blogBody"> 
+          <div class="row">
+            <div class="col-md-6">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 600px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_ResearchNew.PNG" alt="Research Mini-Game"/></img>
+              </div>
+              <p style="text-align: center;"> Research Mini-Game </p>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 600px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_ResearchCompleteNew.PNG" alt="Research Mini-Game Completed Path"/></img>
+              </div>
+              <p style="text-align: center;"> Research Mini-Game Completed Path </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+       
+        <h4 class="blogSubtitle">Quest System</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          Now for the major update this sprint: The Quest System! Instead of trying to reinvent the wheel I decided to 
+          look and see what others had done for quest systems in their games and I came across a tutorial from Trever Mock 
+          on YouTube. It's a great system that uses events to hook up calls between the game and the quest system to 
+          make sure that everything is being updated properly. It's also a pretty flexible system in that I can modify it 
+          later if I need to depending on what the type of quests I have the player do. Currently, it is set up for 
+          two types of quests fetch quests and going to a specific location quests but I am planning on adding in more 
+          quest types. In the future such as researching specific herbs and creating certain potions though these won't 
+          be added in until a later sprint. 
+
+
+          <br> 
+
+          In terms of what's next for the Quest System, I still need to hook it up with the Quest Log and display the 
+          quests to the player as it is currently all in code right now. I also need to finish commenting the code and 
+          updating the documentation to refelect the new Quest System.
+
+
+        </p>
+        
+        
+        <h4 class="blogSubtitle">Next Sprint: Finish Documentation and Start Herb/Potion System</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          The first thing I want to finish is the documentation for the Quest System. It'll just be a lot of busy work 
+          to get the code commented properly and finish the architecture diagram in miro but I think it's important that 
+          everything is documented properly so I know what I was doing when I come back to this section of the game later on. 
+          After I finish that, I'm going to start fleshing out the actual Herb and Potion crafting system. This will mainly 
+          be coming up with values for each herb that combine together to create the potions. These values will also change 
+          depending on the preparation method used. I'll have a lot of design decisions to make this sprint so I'm not expecting 
+          too much programming but it would be nice to get to that stage.
+
+
+        </p>
+
+        
+       
+
+      <footer>
+        <div class="container">
+          <div class="twelve columns footer">
+            &copy; John Vance | All Rights Reserved
+          </div>
+          
+        </div>
+  
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+</html>
