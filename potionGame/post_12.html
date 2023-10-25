@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>John Vance's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+  <!-- JavaScript 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/javaScript/move.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+   <!-- FancyBox 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+   -->
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="/image/png" href="/images/favicon.png">
+
+  <script>
+    
+    $(function(){
+      $("#header").load("../Header.html");
+      
+
+    });  
+    
+
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div class="animate generalBackground">
+
+      <div id="header">
+  
+      </div>
+      
+
+
+        <h2 class="break">
+          <div>
+            Crafting System and Bug Fixes
+            
+          </div>
+          
+        </h2>
+
+        <h4 class="blogSubtitle">Intro</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          While I originally thought that most of this sprint would be designing I neglected to consider that I hadn't 
+          really implemented the architecture for the full crafting system yet. The main crafting system of the game is 
+          based around the potions and a lot of my work this past sprint was programming the architecture for that system 
+          and fixing the bugs that appeared in the crafting UI. I also completely finished documenting the new Quest system 
+          and also worked on documenting the new Potion Crafting system I redesigned.
+             
+        </p>        
+
+
+        <h4 class="blogSubtitle">New Potion Crafting</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          To start I implemented a new system for how to craft potions. The old system was hard coded to give the player a 
+          specific potion when an herb was in the Cauldron. Now when the button to make a potion is pressed, the PotionManager 
+          script determines which potion should be given to the player based on the added values of the herbs. Each Herb object 
+          now has a Dictionary of the different elements and the amount that that herb has. To test this I gave the currently 
+          implemented Herb one unit of the Fire attribute and set the current potion to require 2 units of Fire to be outputted. 
+          This requires the player to add 2 herbs to the cauldron to make the potion. 
+
+          <br><br>
+
+          Going back to the Elements that I added in the game, I went back and forth as to which elemental attributes to add as 
+          mechanics. I debated going against the common Fire, Water, Earth, Air core however I decided that it is popular for a 
+          reason. I did change water to Ice though just to have the possibility of a snowy area. I also added the 
+          Light and Shadow elements so I could include some healing/poison potions in the future. Each Herb is required to have 
+          one or more of these elements and the three devices are able to change these elemental attributes in different ways (though this 
+          will be dependent on the herb and is not implemented yet). 
+
+
+        </p>
+
+        <h4 class="blogSubtitle">Potion Crafting UI Changes</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          With the Potion Crafting UI I made some changes primarily to the storage in the Cauldron. Before, herbs were just added 
+          to an array stored within the cauldron and any amount of herbs could be added. Now, the Cauldron only allows for up to 
+          4 herbs to be stored at once and the player is able to click on containers in the cauldron to remove them. I also 
+          thought to add in drag functionality for the inventory and Cauldron UI however, as i was in the process of adding it I 
+          remembered that the main control scheme I'm developing for is controller which would have a terrible time with dragging 
+          so I decided to scrap the feature. 
+
+
+
+        </p>
+
+        <div class="blogBody"> 
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_NewCauldron.PNG" alt="New Cauldron UI"/></img>
+              </div>
+              <p style="text-align: center;"> New Cauldron UI </p>
+
+            </div>
+<!-- 
+            <div class="col-md-6">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 600px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_ResearchCompleteNew.PNG" alt="Research Mini-Game Completed Path"/></img>
+              </div>
+              <p style="text-align: center;"> Research Mini-Game Completed Path </p>
+
+            </div> -->
+
+          </div>
+
+
+        </div>
+
+       
+        <h4 class="blogSubtitle">Bug Fixes</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          Most of the bugs that came up had to do with the new cauldron slots and adding quality of life features such as the 
+          ability to close both the Inventory and Crafting UI when exiting out, adding back the herbs when the Crafting UI 
+          closes, and making sure that herbs marked as a different Process Type (Distilled, Crushed, or Smoked) are sent back 
+          to the player's Inventory as the Raw form. 
+
+          <br><br>
+
+          I debated if the player should have the other Process Types be able to be stored in their inventory however I decided 
+          that with the multiple variety of Process Types and the eventually large amount of herbs, the player's inventory would 
+          likely get too cluttered and it could become confusing for the player. Additionally if the player made a mistake and Crushed 
+          a herb instead of Distilled it, then they wouldn't have any way to get the raw form of the herb back to correct it.
+          
+
+
+        </p>
+        
+        
+        <h4 class="blogSubtitle">Next Sprint: Work on the Herb Journal</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          Since one of the main goals of the player is to document the different herbs they find in the game I want to include a 
+          journal for them to store the data they find. I'd like to implement it similarly to the Pokedex in the Pokemon games where 
+          each Herb has its own entry and information about it is only obtained after the player has researched it. I think I can complete 
+          this in the next 2 weeks and if I have any extra time I might finish up the Quest Log which I still need to display to the player.
+
+
+        </p>
+
+
+
+        <div class="d-flex justify-content-around">
+          <a class="devBlogBtn" href="./post_11.html"> <-- Previous</a>
+
+          <a class="devBlogBtn isDisabled" href="./post_13.html">Next --> </a>
+
+
+        </div>
+
+
+        
+       
+
+      <footer>
+        <div class="container">
+          <div class="twelve columns footer">
+            &copy; John Vance | All Rights Reserved
+          </div>
+          
+        </div>
+  
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+</html>

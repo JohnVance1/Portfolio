@@ -378,6 +378,23 @@ h1.display-4 > a:hover{
 
 }
 
+.devBlogBtn{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 22px;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.9k;
+    text-decoration: none;
+    pointer-events: none;
+
+  }
+
 .headLinks{
     text-decoration: none;
     padding: 22px;
