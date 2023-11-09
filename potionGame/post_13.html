@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>John Vance's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+  <!-- JavaScript 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/javaScript/move.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+   <!-- FancyBox 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+   -->
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="/image/png" href="/images/favicon.png">
+
+  <script>
+    
+    $(function(){
+      $("#header").load("../Header.html");
+      
+
+    });  
+    
+
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div class="animate generalBackground">
+
+      <div id="header">
+  
+      </div>
+      
+
+
+        <h2 class="break">
+          <div>
+            Herb Journal System
+            
+          </div>
+          
+        </h2>
+
+        <h4 class="blogSubtitle">Intro</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          I managed to get the Herb Journal implemented and also added in two more Herbs to be placeholders so I could test 
+          multiple pages. I also worked on some features that should have been implemented with the other UI such as the Journal 
+          and the Inventory functioning properly in different Unity scenes. I'm pretty happy that I managed to complete the goals 
+          of this sprint and I feel like I'm getting better at scoping them out as I have met or gone past the goals of the past 
+          few sprints.
+          
+             
+        </p>        
+
+
+        <h4 class="blogSubtitle">Herb Journal UI</h4>
+
+
+        <div class="blogBody"> 
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_HerbJournal.gif" alt="Herb Journal gif"/></img>
+              </div>
+              <p style="text-align: center;"> Herb Journal Example </p>
+
+            </div>
+
+            
+
+          </div>
+
+
+        </div>
+
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          Currently most of the Herb Journal's UI is extremely simple and the majority of it is planned to be replaced by actual assets. 
+          There are two Herbs shown at a time with 3 major areas on each page. The major areas are the Herb's picture and name, the 
+          elements associated with that Herb, and the description of what the Herb is and where to find it. These areas are located at the 
+          top left, top right, and bottom of each page respectively. 
+          
+          <br><br>
+          
+          The initial stage of each Herb is that everything is blacked out and the info for the Herb's name and basic info are displayed 
+          as question marks. When an Herb is first picked up the name and image of the Herb is displayed in the Journal to the player. 
+          Once the Herb is researched then the elements for the Herb are displayed (shown by the black square on the top right turning 
+          from black to white) and the Herb's basic info on the bottom is displayed. In a later update I will probably separate the Herb's 
+          info section into two, one for where the Herb is located and another for the basic description and effects of the Herb. 
+
+        </p>
+
+        <div class="blogBody"> 
+          <div class="row">
+            <div class="col-md-4">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_HerbJournalEmpty.PNG" alt="Herb Journal with undiscovered Herbs"/></img>
+              </div>
+              <p style="text-align: center;"> Herb Journal with undiscovered Herbs </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 600px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_HerbJournalFound.PNG" alt="Herb Journal with discovered Herbs"/></img>
+              </div>
+              <p style="text-align: center;"> Herb Journal with discovered Herbs </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 600px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_HerbJournalResearched.PNG" alt="Herb Journal with researched Herbs"/></img>
+              </div>
+              <p style="text-align: center;"> Herb Journal with researched Herbs </p>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <h4 class="blogSubtitle">New Herbs</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          For the Herb Journal I knew that I wanted a way to change pages so that the player can see multiple Herbs and for that I knew I 
+          would need more Herbs than the two that were currently implemented. To cut down on the time for the asset creation I only decided 
+          to make two more Herbs one based on the Fire element and the other based on Shadow. These are both not at all what their final stages 
+          will be but I thought that they looked decent for placeholders. In the game I currently had the blue Herb set to the Fire element 
+          and the white Herb set to Light and so I changed the blue Herb to be Ice and changed the Fire Herb to the newly created one. 
+
+
+
+        </p>
+
+        
+        <div class="blogBody"> 
+          <div class="row">
+            <div class="col-md-6">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_FireHerb.png" alt="Fire Herb"/></img>
+              </div>
+              <p style="text-align: center;"> Fire Herb </p>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 600px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_ShadowHerb.png" alt="Shadow Herb"/></img>
+              </div>
+              <p style="text-align: center;"> Shadow Herb </p>
+
+            </div>
+
+            
+
+          </div>
+
+
+        </div>
+       
+        
+        
+        <h4 class="blogSubtitle">Next Sprint: Finish Quest Log and Finally Add Controller Support</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          For the next sprint I'm planning on finishing up the final bit of the Quest system by displaying a Quest Log to the player. 
+          I'm thinking for now I am only going to add in a UI screen which displays which state an active or completed Quest is in. 
+          The other section that I really want to focus on is getting controller support implemented. Currently I only have mouse 
+          and keyboard implemented as that is what I can easily test with however as I mentioned in a previous blog post, the released game 
+          will have full controller support. I want to add this in early so I can make sure that all of the systems work will with a 
+          controller and so that I can test different systems I create on the hardware it is supposed to be used on. 
+
+        </p>
+
+
+
+        <div class="d-flex justify-content-around">
+          <a class="devBlogBtn" href="./post_12.html"> <-- Previous</a>
+
+          <a class="devBlogBtn isDisabled" href="./post_14.html">Next --> </a>
+
+
+        </div>
+
+
+        
+       
+
+      <footer>
+        <div class="container">
+          <div class="twelve columns footer">
+            &copy; John Vance | All Rights Reserved
+          </div>
+          
+        </div>
+  
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+</html>
