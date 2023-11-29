@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>John Vance's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+  <!-- JavaScript 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/javaScript/move.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+   <!-- FancyBox 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+   -->
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="/image/png" href="/images/favicon.png">
+
+  <script>
+    
+    $(function(){
+      $("#header").load("../Header.html");
+      
+
+    });  
+    
+
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div class="animate generalBackground">
+
+      <div id="header">
+  
+      </div>
+      
+
+
+        <h2 class="break">
+          <div>
+            Quest Log and Controller Input
+            
+          </div>
+          
+        </h2>
+
+        <h4 class="blogSubtitle">Intro</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          This will be a fairly small update since I was on vacation the past week and wasn't able to work on the game. 
+          First and foremost I was able to mostly accomplish what I planned to do for the past sprint. I finished up the Quest 
+          Log and make it visually update for the player. I also implemented all of the controller input 
+          however I ran into one major issue that I will go over in a later section.
+
+             
+        </p>        
+
+
+        <h4 class="blogSubtitle">Quest Journal UI</h4>
+
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          The Quests are separated by Active and Completed with unobtained Quests not being shown. Eventually I want to 
+          have the UI mimic the Quest Log in Baulder's Gate 3 where the Quest info is displayed on the right of the screen 
+          but that can wait for another update. It is a fairly basic UI now but in terms of showing information to the 
+          player it functions as is.
+
+
+
+        </p>
+
+        <div class="blogBody"> 
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_QuestLogUI.PNG" alt="Quest Log UI"/></img>
+              </div>
+              <p style="text-align: center;"> Quest Log UI </p>
+
+            </div>
+
+            
+
+        </div>
+
+        <h4 class="blogSubtitle">Controller Input</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          All of the major controls are now implemented to use both Keyboard and Mouse and controller however 
+          I was only partially able to implement being able to navigate a grid menu with the controller. Through 
+          researching Unity's UI systems I found that the UI Builder I was using for all of my UI elements has a major 
+          drawback that I hadn't seen when I initially decided to use it. It doesn't natively allow for the Navigate function to 
+          work as effectively as the Canvas UI system. With the Canvas UI you can set up UI elements to Navigate to certain elements 
+          when the directional buttons are pressed through the inspector. However, with the Ui Builder that functionality hasn't 
+          been implemented yet. The only way to replicate it using the UI Builder is to program the navigation myself which I was 
+          able to mostly complete but because of the learning curve, I wasn't able to finish it in time for the end of the sprint. 
+
+
+        </p>
+
+        
+        
+        
+        
+        <h4 class="blogSubtitle">Next Sprint: Finish Controller Support and Work on Shrine System</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          For the next sprint I want to fully finish the controller support and then move on to working on the final system for 
+          the MVP which is the Shrine System. The Shrine System is going to be the main way that the player progresses throughout 
+          the game. The player will need to place a certain number of potions with certain effects to open new areas and assist in 
+          healing the surrounding land.    
+
+        </p>
+
+
+
+        <div class="d-flex justify-content-around">
+          <a class="devBlogBtn" href="./post_13.html"> <-- Previous</a>
+
+          <a class="devBlogBtn isDisabled" href="./post_15.html">Next --> </a>
+
+
+        </div>
+
+
+        
+       
+
+      <footer>
+        <div class="container">
+          <div class="twelve columns footer">
+            &copy; John Vance | All Rights Reserved
+          </div>
+          
+        </div>
+  
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+</html>
