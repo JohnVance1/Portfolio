@@ -74,7 +74,7 @@
 
         <h2 class="break">
           <div>
-            Quest Log and Controller Input
+            Controller Input Continued
             
           </div>
           
@@ -83,29 +83,26 @@
         <h4 class="blogSubtitle">Intro</h4>
 
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">
-          This will be a fairly small update since I was on vacation the past week and wasn't able to work on the game. 
-          First and foremost I was able to mostly accomplish what I planned to do for the past sprint. I finished up the Quest 
-          Log and make it visually update for the player. I also implemented all of the controller input 
-          however I ran into one major issue that I will go over in a later section.
+          Since this last week was kind of busy I wasn't able to get much done again so this will be an even smaller post than the 
+          last one, but I was able to mostly get the controller input working.There are still a couple of bugs with the functionality 
+          and setting up the other systems with controller support but the main functionality of moving through the inventory and 
+          other menus is implemented.
 
              
         </p>        
 
 
-        <h4 class="blogSubtitle">Quest Journal UI</h4>
+        <h4 class="blogSubtitle">Inventory Movement</h4>
 
 
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
-          The Quests are separated by Active and Completed with unobtained Quests not being shown. Eventually I want to 
-          have the UI mimic the Quest Log in Baulder's Gate 3 where the Quest info is displayed on the right of the screen 
-          but that can wait for another update. It is a fairly basic UI now but in terms of showing information to the 
-          player it functions as is.
-
-
+          I was able to get the controller working on the Inventory and the Cauldron UI however I haven't gotten the other functions like 
+          the Research Minigame set up. There's a couple of other small functionality things I still need to set up like the Make Potion 
+          and Cancel Potion buttons as well as the Quest Log and Herb Journal and hopefully I'll be able to get those finished by next sprint.  
 
         </p>
 
-        <div class="blogBody"> 
+        <!-- <div class="blogBody"> 
           <div class="row">
             <div class="col-md-12">
 
@@ -119,44 +116,39 @@
 
             
 
-        </div>
-      </div>
+        </div> -->
 
-        <h4 class="blogSubtitle">Controller Input</h4>
+        
+        
+        
+        
+        <h4 class="blogSubtitle">Next Sprint: Still Finish Controller Support and Work on Shrine System</h4>
 
-        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
-          All of the major controls are now implemented to use both Keyboard and Mouse and controller however 
-          I was only partially able to implement being able to navigate a grid menu with the controller. Through 
-          researching Unity's UI systems I found that the UI Builder I was using for all of my UI elements has a major 
-          drawback that I hadn't seen when I initially decided to use it. It doesn't natively allow for the Navigate function to 
-          work as effectively as the Canvas UI system. With the Canvas UI you can set up UI elements to Navigate to certain elements 
-          when the directional buttons are pressed through the inspector. However, with the Ui Builder that functionality hasn't 
-          been implemented yet. The only way to replicate it using the UI Builder is to program the navigation myself which I was 
-          able to mostly complete but because of the learning curve, I wasn't able to finish it in time for the end of the sprint. 
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          For the next sprint I want to fully finish the controller support for the rest of the systems and possibly clean up the UI 
+          systems in the process. I will likely need to fully overhaul the UI at some point as the code has gotten very messy and 
+          a lot of the architecture doesn't make sense anymore. This includes the UI Builder system that I am using. While I really 
+          like this system it is still in development and a lot of the issues that I am having to overcome are non-existent with 
+          using the Canvas system. Ultimately I may end up reverting everything back to the Canvas to make development a little 
+          easier but for now I'll keep it all within the UI Builder. 
+
 
 
         </p>
 
-        
-        
-        
-        
-        <h4 class="blogSubtitle">Next Sprint: Finish Controller Support and Work on Shrine System</h4>
-
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">
-          For the next sprint I want to fully finish the controller support and then move on to working on the final system for 
-          the MVP which is the Shrine System. The Shrine System is going to be the main way that the player progresses throughout 
-          the game. The player will need to place a certain number of potions with certain effects to open new areas and assist in 
-          healing the surrounding land.    
+          Also, as recommended by others, I am planning on adding in the GitHub pull requests to these blog posts. Since there wasn't 
+          a ton of work done this past sprint on the programming side I am going to start implementing more of the code in the next 
+          post.
 
         </p>
 
 
 
         <div class="d-flex justify-content-around">
-          <a class="devBlogBtn" href="./post_13.html"> <-- Previous</a>
+          <a class="devBlogBtn" href="./post_14.html"> <-- Previous</a>
 
-          <a class="devBlogBtn" href="./post_15.html">Next --> </a>
+          <a class="devBlogBtn isDisabled" href="./post_16.html">Next --> </a>
 
 
         </div>
