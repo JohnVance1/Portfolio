@@ -74,7 +74,7 @@
 
         <h2 class="break">
           <div>
-            Controller Input Continued
+            Controller Input and Basic Shrine
             
           </div>
           
@@ -83,56 +83,73 @@
         <h4 class="blogSubtitle">Intro</h4>
 
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">
-          Since this last week was kind of busy I wasn't able to get much done again so this will be an even smaller post than the 
-          last one, but I was able to mostly get the controller input working.There are still a couple of bugs with the functionality 
-          and setting up the other systems with controller support but the main functionality of moving through the inventory and 
-          other menus is implemented.
+          Since this previous sprint went through the holidays I decided to extend it by two weeks to make up for it and add in the 
+          shrine. I managed to finished the controller input functionallity to work with all of the current UI elements however i'm still 
+          not really satisfied with the current UI systems and how I've architectured everything so I'm planning on fixing it all 
+          during a later sprint.
+          
+          Additionally I am trying something new this post and I'm adding in the pull requests/branch merges for each feature I worked on 
+          in the sprint. This way I can show off the code and have a bit more info on the technical side rather than just explaining what I 
+          worked on through text. Each link for the pull requests will be linked at the bottom of the post from now on.         
+
 
              
         </p>        
 
 
-        <h4 class="blogSubtitle">Inventory Movement</h4>
+        <h4 class="blogSubtitle">Shrine Implementation</h4>
 
 
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
-          I was able to get the controller working on the Inventory and the Cauldron UI however I haven't gotten the other functions like 
-          the Research Minigame set up. There's a couple of other small functionality things I still need to set up like the Make Potion 
-          and Cancel Potion buttons as well as the Quest Log and Herb Journal and hopefully I'll be able to get those finished by next sprint.  
-
+          Since the last post waas mainly about the controller input I'll mainly focus on the new shrine mechanic that I developed.
+          The main goal of the mechanic is to provide players with a sense of progression throughouut the game where each fountian they 
+          complete allows them to unlock new areas with new herbs to discover. The current implementation has each shrine needed up to 
+          four different potions inserted into it's slots to become "active", healing the land and allowing the player to progress. 
         </p>
 
-        <!-- <div class="blogBody"> 
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          Similarly to the Cauldron UI the player needs to first select the potion they want to input into the shrine and then the spot 
+          in the shrine they want to put that potion into. The order of the potions does not matter and the shrine checks all of the 
+          slots to see if the correct potions are inserted. Currently, since there is only one potion implemented in the game, each of 
+          the four slots only has the same potion but the player wioll need four of the same potion to complete the shrine.  
+        </p>
+
+        <div class="blogBody"> 
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
 
               <div class="d-flex justify-content-around">
                 <img class="blogImage" style="max-width: 800px;" 
-                src="/Portfolio/images/AlcGame/AlcGame_QuestLogUI.PNG" alt="Quest Log UI"/></img>
+                src="/Portfolio/images/AlcGame/AlcGame_ShrineEmpty.PNG" alt="Shrine with no Potions"/></img>
               </div>
-              <p style="text-align: center;"> Quest Log UI </p>
+              <!-- <p style="text-align: center;"> Quest Log UI </p> -->
+
+            </div>
+            <div class="col-md-6">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_Shrine.PNG" alt="Shrine with one Potion"/></img>
+              </div>
+              <!-- <p style="text-align: center;"> Quest Log UI </p> -->
 
             </div>
 
-            
+            </div>
 
-        </div> -->
+        </div>
 
         
         
         
         
-        <h4 class="blogSubtitle">Next Sprint: Still Finish Controller Support and Work on Shrine System</h4>
+        <h4 class="blogSubtitle">Next Sprint: Create a Basic Game Loop</h4>
 
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">
-          For the next sprint I want to fully finish the controller support for the rest of the systems and possibly clean up the UI 
-          systems in the process. I will likely need to fully overhaul the UI at some point as the code has gotten very messy and 
-          a lot of the architecture doesn't make sense anymore. This includes the UI Builder system that I am using. While I really 
-          like this system it is still in development and a lot of the issues that I am having to overcome are non-existent with 
-          using the Canvas system. Ultimately I may end up reverting everything back to the Canvas to make development a little 
-          easier but for now I'll keep it all within the UI Builder. 
-
-
+          Since most of the major features are now implemented, I'm planning on creating a small game loop where the player collects 
+          one or two herbs, researches them, makes a potion, and then inserts it into the shrine. I imagine that this might take up 
+          more than one sprint so I'll plan for that. I can foresee a lot of bug fixes and small additions needed to be made in order 
+          to get this working properly.
 
         </p>
 
@@ -143,12 +160,20 @@
 
         </p>
 
+        <h4 class="blogSubtitle">Pull Requests</h4>
+
+        <div class="pullRequestBackground d-flex justify-content-around" style="margin: 10px 50px 50px 50px;">
+          <a class="pullRequestBtn" href="https://github.com/JohnVance1/WizardRoguelike/pull/1"> Controller Support </a>          
+
+          <a class="pullRequestBtn" href="https://github.com/JohnVance1/WizardRoguelike/pull/2"> Shrine Inplementation </a>
+        </div>
+
 
 
         <div class="d-flex justify-content-around">
-          <a class="devBlogBtn" href="./post_14.html"> <-- Previous</a>
+          <a class="devBlogBtn" href="./post_15.html"> <-- Previous</a>
 
-          <a class="devBlogBtn" href="./post_16.html">Next --> </a>
+          <a class="devBlogBtn isDisabled" href="./post_17.html">Next --> </a>
 
 
         </div>
