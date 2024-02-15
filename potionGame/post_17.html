@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>John Vance's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+  <!-- JavaScript 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/javaScript/move.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+   <!-- FancyBox 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+   -->
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="/image/png" href="/images/favicon.png">
+
+  <script>
+    
+    $(function(){
+      $("#header").load("../Header.html");
+      
+
+    });  
+    
+
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div class="animate generalBackground">
+
+      <div id="header">
+  
+      </div>
+      
+
+
+        <h2 class="break">
+          <div>
+            Game Updates and GDC
+            
+          </div>
+          
+        </h2>
+
+        <h4 class="blogSubtitle">Intro</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          So it's been a little while since I posted one of these but over the last month I've done a lot of redesigning of the game 
+          and put a lot of thought into what I want the initial MVP of the game to end up as. This just so happens to coincide with the 
+          fact that I'm planning on attending GDC this year and I want to have a playable prototype by then that I can show off. 
+          More recently I've been debating about what to put into the final build for GDC.
+              
+        </p>        
+
+        <h4 class="blogSubtitle">MVP Direction</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          Initially I wanted the MVP to be ready with all of the systems in play and having a very vertical slice of everything. However 
+          after discussing the my goals with a few of my friends and given that GDC is only about a month away I am deciding to pivot 
+          and focus solely on the crafting and research aspects of the potions for my initial build. I think that this shift is much more reasonable 
+          and will allow me to focus on some of the core systems and what makes my game unique.
+
+   
+        </p>
+
+        <div class="blogBody" style="margin: 10px 50px 50px 50px;">
+          <p>          
+            My current plans for GDC build are:             
+          </p>
+          <ul>
+            <li>Expand and flesh out the Player's house</li>
+            <ul>
+              <li>This includes designing where important objects, like the cauldron and research station, go and decorations if possible</li>
+            </ul>
+            <li>Include very basic farm plots where the player can harvest 1 herb of each type (likely infinitely)  </li>
+            <li>Add in UI for the herbs added into the cauldron displaying how much of each element is currently in the cauldron</li>
+            <li>Add in two more herbs to have 1 herb for each element</li>
+            <li>Add in a research mini-game for each of the 6 herbs   </li>
+            <li>Create and add in assets for the Herb Journal</li>
+            <li>Create a UI for the player to keep track of Potions made</li>
+            <li>Add in an instructional/tutorial for the research mini-game as well as the rest of the game</li>
+          </ul>
+
+          <p>
+            While this is a decently large list I am pretty confident in my ability to finish it all.
+          </p>
+        </div>
+
+        
+        <h4 class="blogSubtitle">Changes Since Last Post</h4>
+
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          So while a lot of the last five weeks has been design focused I have gotten a decent amount of work done on the development side of the game. The first major update is that I ended up completely switching the UI from the UI Toolkit back 
+          to the Canvas system. I feel like because the limitations and extra steps I needed to take in order to get the same functionality
+          that is native to the Canvas system I became increasingly focused on the UI and it ended up taking a lot of development time. 
+          Now after switching over to the Canvas system I am hoping for it to be a more streamlined process when it comes to developing 
+          more UI elements.
+        </p>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          Speaking of which I have developed a lot of assets for the UI including actual inventory assets, research mini-game assets, and environmental 
+          props however these environmental assets won't be used in the GDC build. 
+        </p>
+
+
+        
+
+        <div class="blogBody"> 
+          <div class="row d-flex align-items-end">
+            <div class="col-md-3">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/images/AlcGame/AlcGame_House.png" alt="House"/></img>
+              </div>
+              <p style="text-align: center;"> House </p>
+
+            </div>
+            <div class="col-md-3">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/images/AlcGame/AlcGame_CommunityCenter.png" alt="Community Center"/></img>
+              </div>
+              <p style="text-align: center;"> Community Center </p> 
+
+            </div>
+            <div class="col-md-3">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/images/AlcGame/AlcGame_ResearchGameUI.PNG" alt="New Research UI"/></img>
+              </div>
+              <p style="text-align: center;"> Research Mini-Game </p>
+
+            </div>
+            <div class="col-md-3">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/images/AlcGame/AlcGame_InventoryUI.PNG" alt="New Inventory UI"/></img>
+              </div>
+              <p style="text-align: center;"> Inventory UI </p>
+
+            </div>
+
+            </div>
+
+        </div>
+
+        
+        
+        
+        
+        <h4 class="blogSubtitle">Next Sprint: Work on Polishing Mechanics and Kepp up with Blog Posts</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          I'm planning on working on getting a couple features in the next two weeks such as a UI element for displaying the current herb 
+          elements that the player has put into the Cauldron and a system for holding potions that the player has made and what elements 
+          went into it. Also I want to be more consistent with my blog posts since most of these are supposed to be two weeks long.
+
+
+        </p>
+
+        
+
+        <h4 class="blogSubtitle">Pull Requests</h4>
+
+        <div class="pullRequestBackground d-flex justify-content-around" style="margin: 10px 50px 50px 50px;">
+          <a class="pullRequestBtn" href="https://github.com/JohnVance1/WizardRoguelike/pull/3"> Pull Request 17 Link </a>          
+
+          
+        </div>
+
+
+
+        <div class="d-flex justify-content-around">
+          <a class="devBlogBtn" href="./post_16.html"> <-- Previous</a>
+
+          <a class="devBlogBtn isDisabled" href="./post_18.html">Next --> </a>
+
+
+        </div>
+
+
+        
+       
+
+      <footer>
+        <div class="container">
+          <div class="twelve columns footer">
+            &copy; John Vance | All Rights Reserved
+          </div>
+          
+        </div>
+  
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+</html>
