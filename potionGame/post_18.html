@@ -92,16 +92,88 @@
         <h4 class="blogSubtitle">New Herb and Potion Journal</h4>
 
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
-          
+          The old UI for the Herb Journal had both the left and right pages only contain a single Herb and the Player would need to 
+          traverse the entire Journal to find the herb they were looking for. Instead I adjusted the Layout so now the right page 
+          has all of the herbs the Player can possibly discover as well as UI elements for which ones they have discovered while 
+          the left page contains the information about the selected Herb. While this UI is not as realistic as the previous one, I 
+          believe it will be more user friendly for the Players in the long run. 
    
         </p>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          Additionally, the Potion Journal that I added is structured in the same format as the Herb Journal. This way the Player 
+          can use their knowledge of one to help navigate the other. Time will tell as to if I will need to change either of these 
+          UI but for now, I think that the system works well.  
+   
+        </p>
+
+        <div class="blogBody"> 
+          <div class="row d-flex align-items-end">
+            <div class="col-md-4">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/Portfolio/images/AlcGame/AlcGame_HerbJournalFound.PNG" alt="Old Herb Journal"/></img>
+              </div>
+              <p style="text-align: center;"> Old Herb Journal </p>
+
+            </div>
+           
+            <div class="col-md-4">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/Portfolio/images/AlcGame/HerbJournal_AlcGame.PNG" alt="New Herb Journal"/></img>
+              </div>
+              <p style="text-align: center;"> New Herb Journal </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/Portfolio/images/AlcGame/PotionJournal_AlcGame.PNG" alt="New Potion Journal"/></img>
+              </div>
+              <p style="text-align: center;"> Potion Journal </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        
 
         <h4 class="blogSubtitle">Radar Graph</h4>
 
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
-          
+          For the Radar Graph I decided that to save time I would see if there were any good assets off of the Unity Store that 
+          had already been made to suit my purpose. I found a great Radar Graph asset that I will link below. After messing around 
+          with it for a bit I set it up to detect the Herbs in the Cauldron and it worked flawlessly. 
+
+          <br>
+
+          Link to the Radar Asset: <a href="https://assetstore.unity.com/packages/tools/gui/radar-chart-50074" target="_blank">Radar Graph Asset</a>
    
         </p>
+
+        <div class="blogBody"> 
+          <div class="row d-flex align-items-end">
+            <div class="col-md-12">
+
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/Portfolio/images/AlcGame/RadarGraph_AlcGame.PNG" alt="Radar Graph"/></img>
+              </div>
+              <p style="text-align: center;"> Cauldron Herbs with Radar Graph </p>
+
+            </div>
+           
+
+            </div>
+
+        </div>
 
 
         
@@ -109,65 +181,24 @@
 
 
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
-          
+          For the final update that I've made this sprint I worked on transferring the Research Mini-Game over from the UI Builder 
+          to Canvas. This switch was more difficult than the previous systems I had transferred and involved many instances of wanting 
+          to reuse code when it was likely more efficient to scrap the old code and program it from scratch. Eventually I did get the system 
+          up and running and for the next sprint I am planning on implementing more Mini-Games based on the type of Herb that is being researched.
         </p>
 
-        
-
-
-        
-
-        <div class="blogBody"> 
-          <div class="row d-flex align-items-end">
-            <div class="col-md-3">
-
-              <div class="d-flex justify-content-around">
-                <img class="blogImage" style="max-width: 800px;" 
-                src="/Portfolio/images/AlcGame/AlcGame_House.png" alt="House"/></img>
-              </div>
-              <p style="text-align: center;"> House </p>
-
-            </div>
-            <div class="col-md-3">
-
-              <div class="d-flex justify-content-around">
-                <img class="blogImage" style="max-width: 800px;" 
-                src="/Portfolio/images/AlcGame/AlcGame_CommunityCenter.png" alt="Community Center"/></img>
-              </div>
-              <p style="text-align: center;"> Community Center </p> 
-
-            </div>
-            <div class="col-md-3">
-
-              <div class="d-flex justify-content-around">
-                <img class="blogImage" style="max-width: 800px;" 
-                src="/Portfolio/images/AlcGame/AlcGame_ResearchGameUI.PNG" alt="New Research UI"/></img>
-              </div>
-              <p style="text-align: center;"> Research Mini-Game </p>
-
-            </div>
-            <div class="col-md-3">
-
-              <div class="d-flex justify-content-around">
-                <img class="blogImage" style="max-width: 800px;" 
-                src="Portfolio/images/AlcGame/AlcGame_InventoryUI.PNG" alt="New Inventory UI"/></img>
-              </div>
-              <p style="text-align: center;"> Inventory UI </p>
-
-            </div>
-
-            </div>
-
-        </div>
-
-        
-        
+      
         
         
         <h4 class="blogSubtitle">Next Sprint: Implement Final Herbs and Different Research Mini-Games</h4>
 
         <p class="blogBody" style="margin: 10px 50px 50px 50px;">
-          
+          For the next sprint I'm planning on implementing the Earth and Air Herbs into the game as they are the only two that I have 
+          yet to implement. I also am going to start working on some of the art assets that need to be implemented primarily the UI 
+          and adding in some environmental assets for the Player's house. I also want to develop a system for multiple Research Mini-Games 
+          for each individual Herb. I know that this is quite a bit for this sprint but I am mainly going to focus on the Herb implementation 
+          and the Research Mini-Game with any remaining time I have dedicated to art assets. With only about 2 and a half weeks until GDC 
+          I'm looking forward to getting everything implemented and ready.
 
         </p>
 
@@ -176,7 +207,7 @@
         <h4 class="blogSubtitle">Pull Requests</h4>
 
         <div class="pullRequestBackground d-flex justify-content-around" style="margin: 10px 50px 50px 50px;">
-          <a class="pullRequestBtn" href="https://github.com/JohnVance1/WizardRoguelike/pull/3"> Pull Request 17 Link </a>          
+          <a class="pullRequestBtn" href="https://github.com/JohnVance1/WizardRoguelike/pull/4"> Pull Request 18 Link </a>          
 
           
         </div>
