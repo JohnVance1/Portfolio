@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>John Vance's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+  <!-- JavaScript 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/javaScript/move.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+   <!-- FancyBox 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+   -->
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="/image/png" href="/images/favicon.png">
+
+  <script>
+    
+    $(function(){
+      $("#header").load("../Header.html");
+      
+
+    });  
+    
+
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div class="animate generalBackground">
+
+      <div id="header">
+  
+      </div>
+      
+
+
+        <h2 class="break">
+          <div>
+            New Project Updates and Burn-Out
+            
+          </div>
+          
+        </h2>
+
+        <h4 class="blogSubtitle">Intro</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          I have mostly finished the AI system for the guards in the game however it ended up not being the GOAP system 
+          that I initially thought I would need. I ended up switching to a Finite State Machine for a number of reasons 
+          of which the main one being that it ended up being a too complex system for the type of behavior I wanted.
+          Another thing I have experienced over the last couple weeks is a severe sense of burn out. To be honest I didn't work 
+          on the game much of this week and only felt the motivation to work on it the last day or 2.  
+        </p>        
+
+
+        <h4 class="blogSubtitle">New Project Updates</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          Let's start with the updates. I initially started developing the GOAP system however when I began to implement it 
+          and set up behaviors I found that I wanted to interject into them and more predictably change when the agent would 
+          do certain behaviors. While this is doable in a GOAP system I figured that a more simpler approach would be a Finite 
+          State Machine(FSM). I ended up scrapping the GOAP system in favor of the FSM and I found a lot of the behaviors 
+          much easier to implement how I wanted. Additionally, since this game is within the puzzle genre, I wanted the behaviors 
+          to be a little more predictable so the player could anticipate them more easily. Currently, the Guard will start by 
+          investigating the start position of the Player (as if the Player made a noise when breaking into the building) and if 
+          they don't see anything they will immediately go off and check to see if the treasure is still there. I'm still working 
+          on the behaviors after that but the underlying structure is there. I found a great resource called UnityHFSM which I will 
+          link below with the Pull Request link. It was fairly simple to implement after an hour or so of playing around with it and 
+          I was able to put in a simple few states and transitions. 
+
+
+          
+          <br>
+
+          The main issue that I ran into was getting the Guard to detect the various spots that they were going towards. How the 
+          current Guard is configured is that they have a flashlight that covers the first 2 spots in front of them and the 2 spots 
+          adjacent to them. The Guard is considred to be "seeing" something when that something is colliding with the flashlight. The 
+          current flashlight is formed by creating a mesh out of raycasts outputted from the center point of the Guard in a cone shape. 
+          Initially I tried to detect objects through those raycasts however using the default Raycast() method would only detect 
+          the first hit GameObject and using RaycastAll() wouldn't allow for me to have the flashlight collide properly with the world. 
+          Looking back on it I could have used the array generated by RaycastAll() to detect the closest point hit and stop it there 
+          however, my solution was to just do a RaycastAll() in addition to the normal Raycast() to detect all of the various 
+          GameObjects within the field of view. This ended up working really well and for the time being I think I will stick with this 
+          method.
+        </p>
+
+        <div class="blogBody"> 
+          <div class="row d-flex align-items-end">
+            <div class="col-md-12">
+              <div class="d-flex justify-content-around">
+                <img class="blogImage" style="max-width: 800px;" 
+                src="/Portfolio/images/ThiefGame/ThiefGame_GuardFlashlight.PNG" alt="Guard Set-Up"/></img>
+              </div>
+              <p style="text-align: center;"> Guard Set-Up </p>
+
+            </div>          
+            
+            
+          </div>
+
+        </div>
+
+
+        <h4 class="blogSubtitle">Burn-Out</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">          
+          Over the last couple weeks I have been experiencing something that I heard a ton about at GDC and have heard about a ton from 
+          others in the industry: Burn-Out. While I am definitely no stranger to burn-out, I can definitely feel myself becoming less 
+          motivated to apply to jobs and work on projects. As it stands now, I have been searching for a job for the last 2 years. Over 
+          the last 6 months it has seemed like all of the jobs I apply for either ghost me or I get rejected. I know that I'm qualified for 
+          the positions and I have gotten interviews in the past but it gets to be very draining. I've started branching out into different 
+          fields around 6-8 months ago but unfortunately it seems like that's not paying out either. I think the main thing is that I'm 
+          just very tired. Right now I'm trying to find a job in retail so I can have more to break up my day and make more money than I 
+          do now but we'll see how that goes in the coming months. For now I'm still applying to Games and Software/Web jobs everyday and 
+          I want to still work on projects although I'm going to try and take it easy on myself the next week or so.  
+
+        </p>
+           
+        
+        
+        <h4 class="blogSubtitle">Next Sprint: AI and Game Loop</h4>
+
+        <p class="blogBody" style="margin: 10px 50px 50px 50px;">
+          The next sprint is mainly going to be focused on finishing up the AI systems and adding in some sort of Game Loop sequence 
+          where the Player can get the treasure and get back to the entrance without getting caught by a Guard. I'm pretty confident 
+          that I can finish it in two weeks as most of the underlying systems are already there I just need to write some more behaviors 
+          and general game logic for a few triggers.
+        </p>
+
+        
+        <h4 class="blogSubtitle">UnityHFSM Link</h4>
+
+        <div class="row">
+          <div class="col-md-12 pullRequestBackground d-flex justify-content-around" style="margin: 10px 0px 50px 0px;">
+            <a class="pullRequestBtn" href="https://github.com/Inspiaaa/UnityHFSM"> UnityHFSM Link </a>
+
+            
+          </div>
+        </div>
+
+
+        <h4 class="blogSubtitle">Pull Request Link</h4>
+
+        <div class="row">
+          <div class="col-md-12 pullRequestBackground d-flex justify-content-around" style="margin: 10px 0px 50px 0px;">
+            <a class="pullRequestBtn" href="https://github.com/JohnVance1/ThiefMobileGame"> Repo Link </a>          
+
+            
+          </div>
+        </div>
+
+        
+
+
+
+        <div class="d-flex justify-content-around">
+          <a class="devBlogBtn" href="./post_20.html"> <-- Previous</a>
+
+          <a class="devBlogBtn isDisabled" href="./post_22.html">Next --> </a>
+
+
+        </div>
+
+
+        
+       
+
+      <footer>
+        <div class="container">
+          <div class="twelve columns footer">
+            &copy; John Vance | All Rights Reserved
+          </div>
+          
+        </div>
+  
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+</html>
