@@ -1,8 +1,11 @@
 *{
-    /* overflow-x: hidden;
-    overflow-y: auto; */
+    /*overflow-y: auto; */
     font-family: 'Montserrat', sans-serif;
 
+}
+
+#mainPage{
+    overflow-x: hidden;
 }
 
 :root {
@@ -41,6 +44,11 @@
         padding: 20px 0px 20px 0px;
         margin-top: 20px;
     }
+
+    .introText{
+        text-align: center;
+        /* margin: 20px 0px 20px 80px; */
+    }
 }
 
 @media (min-width: 768px) {
@@ -50,6 +58,11 @@
         align-items: center;
         padding: 20px 0px 20px 0px;
         margin-top: 20px;
+    }
+    .introText{
+        text-align: left;
+        margin: 20px 0px 20px 80px;
+
     }
 }
 
@@ -242,11 +255,6 @@ text-decoration: none;
 
 }
 
-.introText{
-    text-align: left;
-    margin: 20px 0px 20px 80px;
-}
-
 .dateText, .bodyText, .github, footer{
     /* font-family: 'Muli', sans-serif; */
     font-family: 'Montserrat', sans-serif;
@@ -295,6 +303,7 @@ footer{
 .aboutMeText{
     margin-right: 20px;
     margin-top: 20px;
+    margin-bottom: 39px;
 }
 
 .github, .title, .title-alt{
@@ -543,13 +552,16 @@ h1.display-4 > a:hover{
 }
 
 .tabBackground-alt{
-    animation: Projects 30s infinite;
+    /* animation: BorderChange 30s infinite; */
+
     /* width: 90%; */
-    margin: 50px;
-    margin-top: 0px;
-    /* box-shadow: 5px 5px 10px var(--black); */
+    margin: 0px 400px 50px 400px;
+    /* margin-top: 0px; */
+    /* box-shadow: 5px 5px 10px var(--pink);  */
+    background-color: var(--offWhite);
 
     color: var(--black);
+    /* border: #8C35DE 4px solid; */
     border-radius: 4px;
 }
 
@@ -621,6 +633,24 @@ h1.display-4 > a:hover{
 
     animation: Projects 30s infinite;
 
+}
+
+@keyframes BorderChange {
+	0% {
+        border: var(--blue) 4px solid;
+	}
+	25% {
+        border: var(--purple) 4px solid;
+    }
+	50% {
+        border: var(--pink) 4px solid;
+    }
+    75% {
+        border: var(--purple) 4px solid;
+    }
+    100% {
+        border: var(--blue) 4px solid;
+	}
 }
 
 @keyframes Projects {
